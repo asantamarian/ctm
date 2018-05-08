@@ -18,7 +18,7 @@ const Helpers = use('Helpers')
 const {ioc} = require('@adonisjs/fold')
 var util = require('util')
 
-Route.on('/').render('welcome')
+Route.on('/').render('soon')
 Route.get('/login/google', 'Account/ExternalLogin.redirect')
 Route.get('/google/callback', 'Account/ExternalLogin.callback')
 
