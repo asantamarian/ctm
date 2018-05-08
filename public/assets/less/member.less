@@ -1,0 +1,291 @@
+/*************************
+BAND MEMBERS start
+**************************/
+.cbx-members {
+    background: url('http://placehold.it/1920x1200') center center no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+    .cbx-inner {
+        padding: 11rem 0 8.8rem;
+    }
+
+    .single-member {
+        figure {
+            position: relative;
+            img {
+                border-radius: 50%;
+                -webkit-transition: .2s;
+                -moz-transition: .2s;
+                -ms-transition: .2s;
+                -o-transition: .2s;
+                transition: .2s;
+            }
+            figcaption {
+                .figcaption-bg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    .bg-rgba(@brand-color, 0.3);
+                    border-radius: 50%;
+                    -ms-transform: scale(1); /* IE 9 */
+                    -webkit-transform: scale(1); /* Safari */
+                    transform: scale(1);
+                    transition: all 0.3s linear;
+                }
+
+                .social-area {
+                    position: absolute;
+                    bottom: -10px;
+                    opacity: 0;
+                    width: 100%;
+                    text-align: center;
+                    -webkit-transition: all 1.2 ease;
+                    transition: all 0.2s linear;
+                    ul {
+                        li {
+                            a {
+                                color: @brand-color;
+                                background: @black-color;
+                                width: 42px;
+                                height: 42px;
+                                text-align: center;
+                                display: inline-block;
+                                border-radius: 50%;
+                                i {
+                                    font-size: 26px;
+                                    line-height: 4.5rem;
+                                }
+                                &:hover {
+                                    background: @brand-color2;
+                                    color: @white-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+        .member-info {
+            .bg-rgba(@white-color, 0.9);
+            padding: 1rem 2rem;
+            text-align: center;
+            margin-bottom: 4.2rem;
+            -webkit-transition: .2s;
+            -moz-transition: .2s;
+            -ms-transition: .2s;
+            -o-transition: .2s;
+            transition: .2s;
+            .name {
+                font-family: @cbx-base-font;
+                .font-size(26);
+                font-weight: 300;
+                margin-top: 0;
+                margin-bottom: .6rem;
+                letter-spacing: 1px;
+                a {
+                    font-weight: inherit;
+                }
+            }
+            .title {
+                font-family: @cbx-heading-font;
+                .font-size(16);
+                text-transform: uppercase;
+                color: @brand-color;
+            }
+        }
+        &:hover {
+            figure {
+                img {
+                    border-radius: 0;
+                }
+                figcaption {
+                    .figcaption-bg {
+                        .bg-rgba(@brand-color, 0);
+                        border-radius: 0;
+                        display: none;
+                        -ms-transform: scale(1); /* IE 9 */
+                        -webkit-transform: scale(1); /* Safari */
+                        transform: scale(1);
+                    }
+                    .social-area {
+                        opacity: .9;
+                        bottom: 10px;
+                    }
+                }
+            }
+            .member-info {
+                background: @black-color;
+                .name {
+                    a {
+                        color: @white-color;
+                    }
+                }
+                .title {
+                    color: @text-menu;
+                }
+            }
+        }
+    }
+}
+/*************************
+BAND MEMBERS end
+**************************/
+
+
+.cbx-member-single {
+    iframe {
+        border: 0;
+    }
+    .single-member, .single-main-info {
+        float: left;
+    }
+    .single-member
+
+    {
+        width: 40%;
+        margin-bottom: 4.2rem;
+        .album-inner {
+            figure {
+                position: relative;
+                figcaption {
+                    opacity: 1;
+                    .bg-rgba(@brand-color, 0.5);
+                }
+            }
+            &:hover {
+                figure {
+                    figcaption {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+    .single-main-info {
+        width: 60%;
+        background: @black-color;
+        padding: 2rem 2rem 2rem 3rem;
+        min-height: 456px;
+        color: @text-ash;
+        .title {
+            font-family: @cbx-base-font;
+            color: @white-color;
+            font-weight: 700;
+            letter-spacing: 1px;
+            a {
+                color: inherit;
+            }
+        }
+        .sub-title {
+            color: @brand-color;
+            .font-size(26);
+            font-family: @cbx-base-font;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-top: 0;
+            letter-spacing: 1px;
+        }
+        .social-area {
+            margin-bottom: 2rem;
+            ul {
+                li {
+                    a {
+                        height: 45px;
+                        width: 45px;
+                        .bg-rgba(@white-color, 0.1);
+                        color: @brand-color;
+                        display: inline-block;
+                        text-align: center;
+                        border-radius: 50%;
+                        i {
+                            font-size: 26px;
+                            line-height: 48px;
+                        }
+                        &:hover {
+                            background: @brand-color;
+                            color: @white-color;
+                        }
+                    }
+                }
+            }
+        }
+        .info-list {
+            margin-bottom: 1.6rem;
+            li {
+                color: @white-color;
+                opacity: .8;
+                font-family: @cbx-heading-font;
+                span {
+                    color: @brand-color;
+                    font-family: @cbx-base-font;
+                    margin-right: 5px;
+                    letter-spacing: 1px;
+                }
+                a {
+                    color: inherit;
+                    &:hover {
+                        color: @brand-color;
+                    }
+                }
+            }
+        }
+        .short-text {
+            margin-bottom: 2.6rem;
+        }
+    }
+    .album-single-section {
+        overflow: hidden;
+        width: 100%;
+    }
+    footer {
+        .cbx-social-share {
+            .title {
+                font-family: @cbx-base-font;
+                color: @brand-color;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            ul {
+                margin-left: 0;
+                padding: 1rem 0;
+                border-top: 1px solid #eee;
+                li {
+                    a {
+                        height: 50px;
+                        width: 50px;
+                        background: @white-color;
+                        color: @brand-color;
+                        display: inline-block;
+                        text-align: center;
+                        border-radius: 50%;
+                        i {
+                            font-size: 26px;
+                            line-height: 50px;
+                        }
+                        &:hover {
+                            background: @brand-color;
+                            color: @white-color;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

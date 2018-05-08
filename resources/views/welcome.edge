@@ -1,15 +1,1012 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="">
 <head>
-  <meta charset="UTF-8" />
-  <title>Hello Adonis</title>
-  {{ css('style') }}
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- The above 3 meta tags *must* come first in the head -->
+
+    <!-- SITE TITLE -->
+    <title>Musix</title>
+    <meta name="description" content="simple description for your site" />
+    <meta name="keywords" content="keyword1, keyword2" />
+    <meta name="author" content="Musix" />
+
+    <!-- twitter card starts from here, if you don't need remove this section -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@yourtwitterusername" />
+    <meta name="twitter:creator" content="@yourtwitterusername" />
+    <meta name="twitter:url" content="http://yourdomain.com" />
+    <meta name="twitter:title" content="Your home page title, max 140 char" /> <!-- maximum 140 char -->
+    <meta name="twitter:description" content="Your site description, maximum 140 char " /> <!-- maximum 140 char -->
+    <meta name="twitter:image" content="/assets/img/twittercardimg/twittercard-280-150.jpg" />  <!-- when you post this page url in twitter , this image will be shown -->
+    <!-- twitter card ends from here -->
+
+    <!-- facebook open graph starts from here, if you don't need then delete open graph related  -->
+    <meta property="og:title" content="Your home page title" />
+    <meta property="og:url" content="http://your domain here.com" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Your site name here" />
+    <!--meta property="fb:admins" content="" /-->  <!-- use this if you have  -->
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/img/opengraph/fbphoto.jpg" /> <!-- when you post this page url in facebook , this image will be shown -->
+    <!-- facebook open graph ends from here -->
+
+
+    <!-- desktop bookmark -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- icons & favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico" />  <!-- this icon shows in browser toolbar -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" /> <!-- this icon shows in browser toolbar -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicon/manifest.json">
+
+    <!-- BOOTSTRAP CSS -->
+    <!-- bootstrap can be added from local or cdn, bellow line is for local, btw, there is js which is added in footer -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" media="all" />
+    <!-- to add bootstrap from cdn pls uncomment the bellow line -->
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"-->
+
+    <!-- FONT AWESOME CSS -->
+    <!-- font awesome css library can be can be added from local or cdn, bellow line is for local -->
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" media="all" />
+    <!-- to add font awesome from cdn pls uncomment the bellow line -->
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"-->
+
+    <!-- loading google fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800%7cOswald"/>
+
+    <!-- for animation effects animate.css -->
+    <link rel="stylesheet" href="/assets/vendor/animate/animate.css" media="all" />
+
+    <!-- OWL SLIDER -->
+    <link rel="stylesheet" href="/assets/vendor/owlcarousel/owl.carousel.css" media="all"/>
+    <link rel="stylesheet" href="/assets/vendor/owlcarousel/owl.theme.css" media="all" />
+
+    <!-- mediaelement audio/video js style with playlist  -->
+    <link rel="stylesheet" href="/assets/vendor/mediaelement/mediaelementplayer.min.css" media="all" />
+    <link rel="stylesheet" href="/assets/vendor/mediaelement/playlist/mep-feature-playlist.css" media="all" />
+    <!--link rel="stylesheet" href="/assets/vendor/mediaelement/mejs-musicskin.css" media="all" -->
+
+    <!-- MASTER  STYLESHEET  -->
+    <link id="cbx-style" rel="stylesheet" href="/assets/css/style-default.min.css?v=1.2" media="all" />
+
+    <!-- MODERNIZER CSS  -->
+    <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
 </head>
-<body>
-  <section>
-    <div class="logo"></div>
-    <div class="title"></div>
-    <div class="subtitle"><p>AdonisJs simplicity will make you feel confident about your code</p></div>
-  </section>
+
+
+<body class="cbx-home">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="cbx-container">
+
+<!-- ***  ADD YOUR SITE CONTENT HERE *** -->
+    <!--HEADER-->
+    <header>
+        <div id="cbx-header" class="cbx-header">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div id="sticker2" class="col-md-3 col-lg-4 cbx-top-left-col">
+                        <div class="cbx-top-left">
+                            <div class="cbx-top-left-inner">
+                                <a class="main-logo" href="index.html"><img src="http://placehold.it/200x60" alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-8 cbx-top-right-social pull-right">
+                        <div class="cbx-top-right">
+                            <div class="cbx-top-right-inner">
+                                <div class="social-area">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.facebook.com/ChileTieneMetal/"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCiWURrPlDhY907PMbYx-Kuw"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sticker" class="col-md-9 col-lg-8 cbx-top-right-menu pull-right">
+                        <div class="cbx-top-right">
+                            <div class="cbx-top-right-inner cbx-header-menu">
+                                <nav class="navbar navbar-default cbx-navbar" role="navigation">
+                                    <div class="cbxcontainer">
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                            <div class="hidden-sm hidden-md hidden-lg cbx-search">
+                                                <form  action="#" method="post">
+                                                    <input class="search" name="search" type="text" placeholder="What're we looking for ?">
+                                                    <a class="search_submit" href="#">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    </a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="collapse navbar-collapse">
+                                            <ul class="nav navbar-nav cbx-nav">
+                                                <li class="active"><a href="index.html">Home</a></li>
+                                                <li>
+                                                    <a href="album-listing.html" class="dropdown-toggle disabled" data-toggle="dropdown">Albums<b class="caret"></b></a>
+                                                    <ul class="dropdown-menu multi-level">
+                                                        <li><a href="album-single.html">First Album Title</a></li>
+                                                        <li class="dropdown-submenu">
+                                                            <a href="album-single.html" class="dropdown-toggle disabled" data-toggle="dropdown">Second Album Title</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="album-single.html">First Song Title</a></li>
+                                                                <li><a href="album-single.html">Second Song Title</a></li>
+                                                                <li><a href="album-single.html">Third Song Title</a></li>
+                                                                <li><a href="album-single.html">Fourth Song Title</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a href="album-single.html" class="dropdown-toggle disabled" data-toggle="dropdown">Third Album Title</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="album-single.html">First Song Title</a></li>
+                                                                <li><a href="album-single.html">Second Song Title</a></li>
+                                                                <li><a href="album-single.html">Third Song Title</a></li>
+                                                                <li><a href="album-single.html">Fourth Song Title</a></li>
+                                                                <li class="dropdown-submenu">
+                                                                    <a href="album-single.html" class="dropdown-toggle disabled" data-toggle="dropdown">Fourth Album Title</a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a href="album-single.html">First Song Title</a></li>
+                                                                        <li><a href="album-single.html">Second Song Title</a></li>
+                                                                        <li><a href="album-single.html">Third Song Title</a></li>
+                                                                        <li><a href="album-single.html">Fourth Song Title</a></li>
+                                                                        <li><a href="album-single.html">Fifth Song Title</a></li>
+                                                                        <li><a href="album-single.html">Fourth Song Title</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-submenu">
+                                                            <a href="album-single.html" class="dropdown-toggle disabled" data-toggle="dropdown">Fifth Album Title</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="album-single.html">First Song Title</a></li>
+                                                                <li><a href="album-single.html">Second Song Title</a></li>
+                                                                <li class="dropdown-submenu">
+                                                                    <a href="album-single.html" class="dropdown-toggle disabled" data-toggle="dropdown">Third Song Title</a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li class="dropdown-submenu">
+                                                                            <a href="album-single.html" class="dropdown-toggle disabled" data-toggle="dropdown">Song Title</a>
+                                                                            <ul class="dropdown-menu">
+                                                                                <li><a href="album-single.html">Song Title</a></li>
+                                                                                <li><a href="album-single.html">Song Title</a></li>
+                                                                                <li><a href="album-single.html">Song Title</a></li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="event-listing.html" class="dropdown-toggle disabled" data-toggle="dropdown">Shows<b class="caret"></b></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="event-single.html">Upcoming Shows one</a></li>
+                                                        <li><a href="event-single.html">Latest Upcoming Shows</a></li>
+                                                        <li><a href="event-single.html">Trending Three</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a class="gotome" href="#cbx-songs">Musics</a></li>
+                                                <li><a class="gotome" href="#cbx-members">Member</a></li>
+                                                <li><a class="gotome" href="#cbx-blog">News</a></li>
+                                                <li><a class="gotome" href="contact.html">Contact</a></li>
+                                                <li class="cbx-search">
+                                                    <form action="#" method="post">
+                                                        <input class="search" name="search" type="text" placeholder="What're we looking for ?">
+                                                        <a class="search_submit" href="#">
+                                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                                        </a>
+                                                    </form>
+                                                </li>
+                                            </ul>
+                                        </div><!--/.nav-collapse -->
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--//.cbx-header-->
+    </header> <!--//.HEADER-->
+
+    <!--HEADER-->
+    <section>
+        <div id="cbx-slider" class="cbx-slider">
+            <div class="cbx-header-menu">
+                <div class="container">
+                    <div class="row">
+
+                    </div> <!--//.main row-->
+                </div> <!--//.container-->
+
+                <div id="cbx-main-slider" class="owl-carousel owl-theme">
+
+                    <!--SLIDER ITEM 1-->
+                    <div class="cbx-item-common cbx-item-left">
+                        <div class="col-sm-12g">
+                            <div class="slider-text-single">
+                                <figure>
+                                    <img src="http://placehold.it/1920x950" alt="Music-Banner"/>
+                                    <figcaption>
+                                        <div class="cbx-container">
+                                            <div class="cbx-hover-link">
+                                                <div class="cbx-vertical">
+                                                    <div class="big-countdown cbx-zoomInUp-one">
+                                                        <div>
+                                                            <span data-startdate="31-08-2017" id="musiccountdown"></span>
+                                                        </div>
+                                                    </div>
+                                                    <h2 class="slider-title cbx-zoomInUp-two">Party On The Big Rocks</h2>
+                                                    <a class="cbx-btn cbx-btn-md cbx-zoomInUp-three" href="event-single.html">Buy Ticket</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div> <!--//.col-->
+                    </div>
+                    <!--SLIDER ITEM 1 End-->
+
+                    <!--SLIDER ITEM 2-->
+                    <div class="cbx-item-common cbx-item-center">
+                        <div class="col-sm-12g">
+                            <div class="slider-text-single">
+                                <figure>
+                                    <img src="http://placehold.it/1920x950" alt="Music-Banner"/>
+                                    <figcaption>
+                                        <div class="cbx-container">
+                                            <div class="cbx-hover-link">
+                                                <div class="cbx-vertical">
+                                                    <h2 class="slider-title cbx-fadeInRight-one">Music With Playback Singer</h2>
+                                                    <p class="slider-sub-title cbx-fadeInRight-two">Exclusive presale concert tickets for members A simple, <span>fast and responsive music template</span></p>
+                                                    <a class="cbx-btn cbx-btn-md cbx-fadeInRight-three" href="#">View Album</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div> <!--//.col-->
+                    </div>
+                    <!--SLIDER ITEM 2 End-->
+                    <!--SLIDER ITEM 3-->
+                    <div class="cbx-item-common cbx-item-right">
+                        <div class="col-sm-12g">
+                            <div class="slider-text-single">
+                                <figure>
+                                    <img src="http://placehold.it/1920x950" alt="Music-Banner"/>
+                                    <figcaption>
+                                        <div class="cbx-container">
+                                            <div class="cbx-hover-link">
+                                                <div class="cbx-vertical">
+                                                    <h2 class="slider-title cbx-fadeInLeft-one">World Tour With Music</h2>
+                                                    <p class="slider-sub-title cbx-fadeInRight-two">Exclusive presale concert tickets for members A simple, <span>fast and responsive music template</span></p>
+                                                    <a class="cbx-btn cbx-btn-md cbx-fadeInLeft-three" href="#">View Album</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div> <!--//.col-->
+                    </div>
+                    <!--SLIDER ITEM 3 End-->
+
+                </div> <!--//.cbx-main-slider-->
+
+            </div> <!--//.cbx-inner-->
+        </div> <!--//.cbx-header-->
+    </section> <!--//.HEADER-->
+
+
+    <!-- *************  //Subscribe Start ************* -->
+    <section>
+        <div id="cbx-subscribe" class="cbx-subscribe">
+            <div class="cbx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-5">
+                            <h2 class="cbx-subscribe-title">Subscribe & Stay Connected !</h2>
+                        </div> <!--//.col-->
+                        <div class="col-xs-12 col-sm-7">
+                            <div class="subscribe-form">
+                                <div class="row">
+                                    <form action="#" class="subscribe-form-action">
+                                        <div class="col-xs-12 col-sm-8 cbx-margin-right">
+                                            <div class="form-group">
+                                                <input type="email" placeholder="Enter Your Email..." required="required" class="form-control cbx-input form-control" id="subscribe">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 cbx-margin-left">
+                                            <div class="form-group">
+                                                <button type="submit" name="cbx-submit" class="cbx-submit cbx-submit-btn"><i class="fa fa-paper-plane"></i></button>
+                                            </div>
+                                        </div>
+                                    </form> <!--//.subscribe-form-->
+                                </div> <!--//.Row-->
+                            </div>
+                        </div> <!--//.col-->
+                    </div> <!--//.row-->
+                </div> <!--//.container-->
+            </div> <!--//.cbx-inner-->
+        </div> <!--//.cbx-mainslider-->
+    </section> <!-- *************  //Subscribe End ************* -->
+
+
+
+
+
+    <!--ALBUM-->
+    <section>
+        <div id="cbx-album" class="cbx-album">
+            <div class="cbx-inner">
+                <div class="container">
+                    <div class="heading-area">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8">
+                                <div class="cbx-heading">
+                                    <h2>
+                                        <span>Album</span>
+                                        <i>Our Featured Albums <span></span></i>
+                                    </h2>
+                                </div>
+                            </div> <!--//.col-->
+                            <div class="col-xs-12 col-sm-4 cbx-right">
+                                <a class="cbx-btn btn-heading" href="album-listing.html">All Albums</a>
+                            </div> <!--//.col-->
+                        </div> <!--//.main row-->
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="single-album">
+                                <div class="album-inner">
+                                    <figure>
+                                        <img src="http://placehold.it/600x757" alt="album"/>
+                                        <figcaption>
+                                            <div class="cbx-hover-link">
+                                                <div class="cbx-vertical">
+                                                    <a href="album-single.html">
+                                                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <h3><a class="h3 title" href="album-single.html">Classical Music Title</a></h3>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div> <!--//.single-album-->
+                            <div class="single-album">
+                                <div class="album-inner">
+                                    <figure>
+                                        <img src="http://placehold.it/600x757" alt="album"/>
+                                        <figcaption>
+                                            <div class="cbx-hover-link">
+                                                <div class="cbx-vertical">
+                                                    <a href="album-single.html">
+                                                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <h3><a class="h3 title" href="album-single.html">Classical Music Title</a></h3>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div> <!--//.single-album-->
+                            <div class="single-album">
+                                <div class="album-inner">
+                                    <figure>
+                                        <img src="http://placehold.it/600x757" alt="album"/>
+                                        <figcaption>
+                                            <div class="cbx-hover-link">
+                                                <div class="cbx-vertical">
+                                                    <a href="album-single.html">
+                                                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <h3><a class="h3 title" href="album-single.html">Classical Music Title</a></h3>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div> <!--//.single-album-->
+                        </div> <!--//.col-->
+                    </div> <!--//.main row-->
+                </div> <!--//.container-->
+            </div> <!--//.cbx-inner-->
+        </div> <!--//.cbx-header-->
+    </section> <!--//.ALBUM END-->
+
+    <!--EVENT-->
+    <section>
+        <div id="cbx-event" class="cbx-event">
+            <div class="cbx-inner">
+                <div class="container">
+                    <div class="heading-area">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8">
+                                <div class="cbx-heading">
+                                    <h2>
+                                        <span>Shows</span>
+                                        <i>Upcoming Events <span></span></i>
+                                    </h2>
+                                </div>
+                            </div> <!--//.col-->
+                            <div class="col-xs-12 col-sm-4 cbx-right">
+                                <a class="cbx-btn btn-heading" href="event-listing.html">All Shows</a>
+                            </div> <!--//.col-->
+                        </div> <!--//.main row-->
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="single-event">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <figure>
+                                            <a href="event-single.html"><img src="http://placehold.it/1170x768" alt="event"/></a>
+                                            <figcaption>
+
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="event-info">
+                                            <h4 class="date">13 February</h4>
+                                            <h3 class="title"><a href="event-single.html">The Palace at Auburn Hills Music</a></h3>
+                                            <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Dhaka University Campus, Dhaka-1205</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <a class="cbx-btn" href="event-single.html">Ticket</a>
+                                    </div>
+                                </div>
+                            </div> <!--//.Single Event-->
+                            <div class="single-event">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <figure>
+                                            <a href="event-single.html"><img src="http://placehold.it/1170x768" alt="event"/></a>
+                                            <figcaption>
+
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="event-info">
+                                            <h4 class="date">23 March</h4>
+                                            <h3 class="title"><a href="event-single.html">The Palace Auburn Playbit music festival</a></h3>
+                                            <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Philadelphia, PA</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <a class="cbx-btn" href="event-single.html">Ticket</a>
+                                    </div>
+                                </div>
+                            </div> <!--//.Single Event-->
+                            <div class="single-event">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <figure>
+                                            <a href="event-single.html"><img src="http://placehold.it/1170x768" alt="event"/></a>
+                                            <figcaption>
+
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="event-info">
+                                            <h4 class="date">13 November</h4>
+                                            <h3 class="title"><a href="event-single.html">Palace Auburn Playbit music festival 2020</a></h3>
+                                            <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> University Campus, Philadelphia</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <a class="cbx-btn" href="event-single.html">Ticket</a>
+                                    </div>
+                                </div>
+                            </div> <!--//.Single Event-->
+                            <div class="single-event">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <figure>
+                                            <a href="event-single.html"><img src="http://placehold.it/1170x768" alt="event"/></a>
+                                            <figcaption>
+
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="event-info">
+                                            <h4 class="date">13 December</h4>
+                                            <h3 class="title"><a href="event-single.html">The Palace Auburn Hills festival 2020</a></h3>
+                                            <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Dhaka University Campus, Bangladesh</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <a class="cbx-btn" href="event-single.html">Ticket</a>
+                                    </div>
+                                </div>
+                            </div> <!--//.Single Event-->
+                            <div class="single-event">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <figure>
+                                            <a href="event-single.html"><img src="http://placehold.it/1170x768" alt="event"/></a>
+                                            <figcaption>
+
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="event-info">
+                                            <h4 class="date">13 January</h4>
+                                            <h3 class="title"><a href="event-single.html">The Palace at Auburn Hills</a></h3>
+                                            <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Philadelphia, PA</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <a class="cbx-btn" href="event-single.html">Ticket</a>
+                                    </div>
+                                </div>
+                            </div> <!--//.Single Event-->
+                        </div> <!--//.col-->
+                    </div> <!--//.main row-->
+                </div> <!--//.container-->
+            </div> <!--//.cbx-inner-->
+        </div> <!--//.cbx-header-->
+    </section> <!--//.EVENT END-->
+
+
+    <!--FEATURED MUSIC-->
+    <section>
+        <div id="cbx-songs" class="cbx-songs">
+            <div class="cbx-inner">
+                <div class="container">
+                    <div class="heading-area">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8">
+                                <div class="cbx-heading">
+                                    <h2>
+                                        <span>Songs</span>
+                                        <i>Featured Musics <span></span></i>
+                                    </h2>
+                                </div>
+                            </div> <!--//.col-->
+                            <div class="col-xs-12 col-sm-4 cbx-right">
+                                <a class="cbx-btn btn-heading" href="#">All Songs</a>
+                            </div> <!--//.col-->
+                        </div> <!--//.main row-->
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="cbxmusicplayer">
+                                <audio controls="controls">
+                                    <source src="/assets/albums/album1/bensound-jazzyfrenchy.mp3" data-cover="http://placehold.it/400x263" data-download-url="#" title="Water Under the Bridge" type="audio/mpeg"/>
+                                    <source src="/assets/albums/album1/bensound-jazzyfrenchy.mp3" data-cover="http://placehold.it/400x263" data-download-url="#" title="Water Under the Bridge Song title" type="audio/mpeg"/>
+                                    <source src="/assets/albums/album1/bensound-jazzyfrenchy.mp3" data-cover="http://placehold.it/400x263" title="Water Under the Bridge title" type="audio/mpeg"/>
+                                    <source src="/assets/albums/album1/bensound-jazzyfrenchy.mp3" data-cover="http://placehold.it/400x263" title="Water Under the Bridge Song" type="audio/mpeg"/>
+                                    <source src="/assets/albums/album1/bensound-jazzyfrenchy.mp3" data-cover="http://placehold.it/400x263" data-download-url="#" title="Water Under the Bridge" type="audio/mpeg"/>
+                                </audio>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div> <!--//.col-->
+                    </div> <!--//.main row-->
+                </div> <!--//.container-->
+            </div> <!--//.cbx-inner-->
+        </div> <!--//.cbx-header-->
+    </section> <!--//.FEATURED MUSIC END-->
+
+
+    <!--VIDEO-->
+    <section>
+        <div id="cbx-video" class="cbx-video">
+            <div class="cbx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="video-text">
+                                <p>When We Were Young
+                                    <span>(Live at The Church Studios)</span></p>
+                            </div>
+                            <div class="video-icon">
+                                <a id="myModalLabel" href="#" data-toggle="modal" data-target="#cbx-modal" ><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="modal fade cbx-modal" id="cbx-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe src="https://www.youtube.com/embed/hdw1uKiTI5c" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!--//.col-->
+                    </div> <!--//.main row-->
+                </div> <!--//.container-->
+            </div> <!--//.cbx-inner-->
+        </div> <!--//.cbx-header-->
+    </section> <!--//.VIDEO END-->
+
+
+
+    <!--BAND MEMBERS MUSIC-->
+    <section>
+        <div id="cbx-members" class="cbx-members">
+            <div class="cbx-inner">
+                <div class="container">
+                    <div class="heading-area">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="cbx-heading">
+                                    <h2>
+                                        <span>Member</span>
+                                        <i>Our Band Members <span></span></i>
+                                    </h2>
+                                </div>
+                            </div> <!--//.col-->
+                        </div> <!--//.main row-->
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="single-member">
+                                <figure>
+                                    <a href="member-single.html"><img src="http://placehold.it/500x500" alt="member"/></a>
+                                    <figcaption>
+                                        <div class="figcaption-bg">
+                                        </div>
+                                        <div class="social-area">
+                                            <ul class="list-inline">
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="member-info">
+                                    <h3 class="name"><a href="member-single.html">Leonardo Doe Caprio</a></h3>
+                                    <p class="title">Pop Musician</p>
+                                </div>
+                            </div>
+                        </div> <!--//.col-->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="single-member">
+                                <figure>
+                                    <a href="member-single.html"><img src="http://placehold.it/500x500" alt="member"/></a>
+                                    <figcaption>
+                                        <div class="figcaption-bg">
+                                        </div>
+                                        <div class="social-area">
+                                            <ul class="list-inline">
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="member-info">
+                                    <h3 class="name"><a href="member-single.html">Caprio Jonathon</a></h3>
+                                    <p class="title">Vocal Artist</p>
+                                </div>
+                            </div>
+                        </div> <!--//.col-->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="single-member">
+                                <figure>
+                                    <a href="member-single.html"><img src="http://placehold.it/500x500" alt="member"/></a>
+                                    <figcaption>
+                                        <div class="figcaption-bg">
+                                        </div>
+                                        <div class="social-area">
+                                            <ul class="list-inline">
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="member-info">
+                                    <h3 class="name"><a href="member-single.html">Kim Doe Caprio</a></h3>
+                                    <p class="title">Rap Musician</p>
+                                </div>
+                            </div>
+                        </div> <!--//.col-->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="single-member">
+                                <figure>
+                                    <a href="member-single.html"><img src="http://placehold.it/500x500" alt="member"/></a>
+                                    <figcaption>
+                                        <div class="figcaption-bg">
+                                        </div>
+                                        <div class="social-area">
+                                            <ul class="list-inline">
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="member-info">
+                                    <h3 class="name"><a href="member-single.html">Devid Barek Lee</a></h3>
+                                    <p class="title">Pop Musician</p>
+                                </div>
+                            </div>
+                        </div> <!--//.col-->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="single-member">
+                                <figure>
+                                    <a href="member-single.html"><img src="http://placehold.it/500x500" alt="member"/></a>
+                                    <figcaption>
+                                        <div class="figcaption-bg">
+                                        </div>
+                                        <div class="social-area">
+                                            <ul class="list-inline">
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="member-info">
+                                    <h3 class="name"><a href="member-single.html">Sarah Jerin Hilari</a></h3>
+                                    <p class="title">Pop Musician</p>
+                                </div>
+                            </div>
+                        </div> <!--//.col-->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="single-member">
+                                <figure>
+                                    <a href="member-single.html"><img src="http://placehold.it/500x500" alt="member"/></a>
+                                    <figcaption>
+                                        <div class="figcaption-bg">
+                                        </div>
+                                        <div class="social-area">
+                                            <ul class="list-inline">
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <div class="member-info">
+                                    <h3 class="name"><a href="member-single.html">Devid Doe Caprio</a></h3>
+                                    <p class="title">Pop Musician</p>
+                                </div>
+                            </div>
+                        </div> <!--//.col-->
+                    </div> <!--//.main row-->
+                </div> <!--//.container-->
+            </div> <!--//.cbx-inner-->
+        </div> <!--//.cbx-header-->
+    </section> <!--//.BAND MEMBERS END-->
+
+
+    <!--BLOG-->
+    <section>
+        <div id="cbx-blog" class="cbx-blog">
+            <div class="cbx-inner">
+                <div class="container">
+                    <div class="heading-area">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8">
+                                <div class="cbx-heading">
+                                    <h2>
+                                        <span>News</span>
+                                        <i>Latest Updates <span></span></i>
+                                    </h2>
+                                </div>
+                            </div> <!--//.col-->
+                            <div class="col-xs-12 col-sm-4 cbx-right">
+                                <a class="cbx-btn btn-heading" href="blog-listing.html">All News</a>
+                            </div> <!--//.col-->
+                        </div> <!--//.main row-->
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="single-blog">
+                                <div class="blog-inner">
+                                    <div class="date">
+                                        23
+                                        <span>February 2015</span>
+                                    </div>
+                                    <figure>
+                                        <a href="blog-single.html"><img src="http://placehold.it/1170x680" alt="news"/></a>
+                                        <figcaption>
+                                            
+                                        </figcaption>
+                                    </figure>
+                                    <div class="title-area">
+                                        <h3 class="title" ><a href="blog-single.html">How I’d redesign piano sheet music Art</a></h3>
+                                    </div>
+                                    <p>A faucibus velit adipiscing est vitae scelerisque tristique
+                                        eu adipiscing porta suspendisse aliquet duis class
+                                        phasellus euismod ...</p>
+                                </div>
+                            </div>
+                        </div> <!--//.col-->
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="single-blog">
+                                <div class="blog-inner">
+                                    <div class="date">
+                                        02
+                                        <span>January 2016</span>
+                                    </div>
+                                    <figure>
+                                        <a href="blog-single.html"><img src="http://placehold.it/1170x680" alt="news"/></a>
+                                        <figcaption>
+
+                                        </figcaption>
+                                    </figure>
+                                    <div class="title-area">
+                                        <h3 class="title" ><a href="blog-single.html">The Great Music Streaming Decision of 2016</a></h3>
+                                    </div>
+                                    <p>A faucibus velit adipiscing est vitae scelerisque tristique
+                                        eu adipiscing porta suspendisse aliquet duis class
+                                        phasellus euismod ...</p>
+                                </div>
+                            </div>
+                        </div> <!--//.col-->
+                    </div> <!--//.main row-->
+                </div> <!--//.container-->
+            </div> <!--//.cbx-inner-->
+        </div> <!--//.cbx-header-->
+    </section> <!--//.BLOG END-->
+
+
+    <!--TWITTER-->
+    <section>
+        <div id="cbx-twitter" class="cbx-twitter">
+            <div class="cbx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="twitter-icon">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </div>
+                            <div class="cbx-feed-display">
+                                <div class="cbx-tweet-feed" id="tweetiefeed">
+                                </div> <!--//FEED-->
+                            </div>
+                        </div> <!--//.col-->
+                    </div> <!--//.main row-->
+                </div> <!--//.container-->
+            </div> <!--//.cbx-inner-->
+        </div> <!--//.cbx-header-->
+    </section> <!--//.TWITTER END-->
+
+
+    <!--FOOTER-->
+    <section>
+        <div id="cbx-footer" class="cbx-footer">
+            <div class="cbx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="copyright">
+                                <p>Copyright © <a href="#">2016</a> • Musix by <a href="http://codeboxr.com/" target="_blank">Codeboxr.com</a> • All rights reserved</p>
+                            </div>
+                        </div> <!--//.col-->
+                    </div> <!--//.main row-->
+                </div> <!--//.container-->
+            </div> <!--//.cbx-inner-->
+        </div> <!--//.cbx-header-->
+    </section> <!--//.FOOTER END-->
+
+
+
+
+<!-- //SITE CONTENT END -->
+
+</div> <!--//SITE CONTAINER-->
+
+
+<!-- *** ADD YOUR SITE SCRIPT HERE *** -->
+
+<!-- JQUERY  -->
+<!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.11.2.min.js"><\/script>')</script-->
+
+
+<script src="/assets/js/jquery.min.js"></script>
+
+
+<!-- OWL SLIDER -->
+<script src="/assets/vendor/owlcarousel/owl.carousel.js"></script>
+
+<!-- smooth scroll, click to top, click to target etc -->
+<script src="/assets/vendor/jquery.smooth-scroll.js"></script>
+
+<!-- countdown -->
+<script src="/assets/vendor/kkcountdown.min.js"></script>
+
+
+<!-- BOOTSTRAP JS  -->
+<script src="/assets/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified JavaScript from cdn, if you want to load from cdn uncomment the bellow line -->
+<!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script-->
+
+<!-- load if our contact form or email subscribe options is used -->
+<script src="/assets/js/validation/jquery.validate.js"></script>
+
+
+<!-- FOR DEMO ONLY-->
+<!-- comment this below line in production -->
+<script type="text/javascript" src="/assets/switcher/js/switcher.js"></script>
+
+<!-- if load google maps then load this api -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3TLfDeD7qstWuksr-dfze6_4YQTA4Q4Q"></script>
+
+<!-- tweetie feed  -->
+<script src="tweetie/tweetie.js"></script>
+
+<!-- mediaelements audio/video js with playlist  -->
+<script src="/assets/vendor/mediaelement/mediaelement-and-player.min.js"></script>
+<script src="/assets/vendor/mediaelement/playlist/mep-feature-playlist.js"></script>
+
+
+
+<!-- CUSTOM SCRIPT  -->
+<script src="/assets/js/custom.js"></script>
+
+<script type="text/javascript">
+
+    jQuery(document).ready(function($){
+        //your custom js code here
+
+
+
+
+    });
+
+</script>
+
 </body>
 </html>

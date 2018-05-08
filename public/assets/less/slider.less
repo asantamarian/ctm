@@ -1,0 +1,485 @@
+/*************************
+SLIDER start
+**************************/
+.cbx-slider {
+    color: @white-color;
+    position: relative;
+    .cbx-inner {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .cbx-item-center {
+        text-align: center;
+    }
+    .cbx-item-left {
+        text-align: left;
+    }
+    .cbx-item-right {
+        text-align: right;
+    }
+    /*Owl Navigation*/
+    .owl-prev, .owl-next {
+        position: absolute;
+        top: 45%;
+        i {
+            font-size: 40px;
+            line-height: 62px;
+        }
+        opacity: 0;
+    }
+    .owl-prev {
+        left: 0;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+        i {
+            margin-left: -4px;
+        }
+    }
+    .owl-next {
+        right: 0;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+        i {
+            margin-right: -4px;
+        }
+    }
+    .owl-theme .owl-controls .owl-buttons div {
+        background: @black-color;
+        border-radius: 50%;
+        color: @brand-color;
+        opacity: 0.4;
+        padding: 0;
+        width: 60px;
+        height: 60px;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .owl-controls {
+        opacity: 0;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+    }
+    &:hover {
+        .owl-controls {
+            opacity: 1;
+            .owl-prev {
+                left: 15px;
+            }
+            .owl-next {
+                right: 15px;
+            }
+        }
+    }
+    /*Owl Navigation End*/
+
+    .cbx-brand {
+        background: transparent;
+        padding-top: 2rem;
+        padding-bottom: 10px;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3s linear;
+
+        .cbx-logo {
+            max-width: 180px;
+            -webkit-transition: all 0.3 ease;
+            transition: all 0.3s linear;
+        }
+    }
+    .menu-onscroll {
+        .bg-rgba(@black-color, 0.8);
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        border-bottom-color:@brand-color;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3s linear;
+        box-shadow: 0 3px 5px rgba(255, 255, 255, 0.2);
+        .cbx-logo {
+            max-width: 170px;
+            -webkit-transition: all 0.3 ease;
+            transition: all 0.3s linear;
+        }
+    }
+
+    .slider-text-single {
+        figure {
+            position: relative;
+            figcaption {
+                .bg-rgba(@black-color, 0.4);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                .cbx-container {
+                    max-width: 1170px;
+                    display: block;
+                    margin: 0 auto;
+                    height: 100%;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    .cbx-hover-link {
+                        width: 100%;
+                        height: 100%;
+                        display: table;
+                        .cbx-vertical {
+                            display: table-cell;
+                            vertical-align: middle;
+                            .cbx-btn {
+                                margin-top: 3.2rem;
+                                display: inline-block;
+                            }
+                            .slider-title {
+                                color: @white-color;
+                                .font-size(68);
+                                font-weight: 900;
+                                text-transform: uppercase;
+                                margin: 0 0 1rem;
+                                font-family: @cbx-base-font;
+                                letter-spacing: 2px;
+                            }
+                            .slider-sub-title {
+                                .font-size(26);
+                                font-family: @cbx-heading-font;
+                                font-weight: 400;
+                                color: @text-menu;
+                                margin: 0;
+                                span {
+                                    display: block;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    /*******************
+    ANIMATION EFFECT
+    *******************/
+
+    #cbx-main-slider {
+        .active {
+
+            /*background Images effect*/
+            .cbx-zoomInDown {
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: 0s;
+
+                -webkit-animation-name: zoomInDown;
+                animation-name: zoomInDown;
+            }
+
+            .cbx-fadeInDown {
+
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: 0s;
+
+                -webkit-animation-name: fadeInDown;
+                animation-name: fadeInDown;
+
+            }
+
+            .cbx-fadeInUp {
+
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: 0s;
+
+                -webkit-animation-name: fadeInUp;
+                animation-name: fadeInUp;
+
+            }
+            /*background Images effect end*/
+
+
+            /*SLIDER ITEM ONE ANIMATION*/
+            .cbx-fadeInLeft-img {
+
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: .3s;
+
+                -webkit-animation-name: fadeInLeft;
+                animation-name: fadeInLeft;
+
+            }
+
+            .cbx-fadeInLeft-one {
+
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: .9s;
+
+                -webkit-animation-name: fadeInLeft;
+                animation-name: fadeInLeft;
+
+            }
+
+            .cbx-fadeInLeft-two {
+
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: 1.5s;
+
+                -webkit-animation-name: fadeInLeft;
+                animation-name: fadeInLeft;
+
+            }
+            .cbx-fadeInLeft-three {
+
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: 2.1s;
+
+                -webkit-animation-name: fadeInLeft;
+                animation-name: fadeInLeft;
+
+            }
+
+            .cbx-fadeInLeft-four {
+
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: 2.7s;
+
+                -webkit-animation-name: fadeInLeft;
+                animation-name: fadeInLeft;
+
+            }
+            /*SLIDER ITEM ONE ANIMATION END*/
+
+
+            /*SLIDER ITEM TWO ANIMATION*/
+            .cbx-fadeInRight-img {
+
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: .3s;
+
+                -webkit-animation-name: fadeInRight;
+                animation-name: fadeInRight;
+
+            }
+
+            .cbx-fadeInRight-one {
+
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: .9s;
+
+                -webkit-animation-name: fadeInRight;
+                animation-name: fadeInRight;
+
+            }
+
+            .cbx-fadeInRight-two {
+
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: 1.5s;
+
+                -webkit-animation-name: fadeInRight;
+                animation-name: fadeInRight;
+
+            }
+            .cbx-fadeInRight-three {
+
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: 2.1s;
+
+                -webkit-animation-name: fadeInRight;
+                animation-name: fadeInRight;
+
+            }
+
+            .cbx-fadeInRight-four {
+
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: 2.7s;
+
+                -webkit-animation-name: fadeInRight;
+                animation-name: fadeInRight;
+
+            }
+            /*SLIDER ITEM TWO ANIMATION END*/
+
+
+            /*SLIDER ITEM THREE ANIMATION*/
+
+            .cbx-zoomInUp-one {
+
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: .9s;
+
+                -webkit-animation-name: fadeInUp;
+                animation-name: fadeInUp;
+
+            }
+
+            .cbx-zoomInUp-two {
+
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: 1.5s;
+
+                -webkit-animation-name: fadeInUp;
+                animation-name: fadeInUp;
+
+            }
+            .cbx-zoomInUp-three {
+
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: 2.1s;
+
+                -webkit-animation-name: fadeInUp;
+                animation-name: fadeInUp;
+
+            }
+
+            .cbx-zoomInUp-four {
+
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                animation-delay: 2.1s;
+
+                -webkit-animation-name: fadeInUp;
+                animation-name: fadeInUp;
+
+            }
+            /*SLIDER ITEM THREE ANIMATION END*/
+        }
+
+
+
+    }
+
+
+
+    .owl-theme .owl-controls {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .big-countdown {
+
+        .kkcountdown-box {
+            font-family: @cbx-heading-font;
+            display: inline-block;
+            margin-bottom: 1.6rem;
+            span {
+                font-family: @cbx-heading-font;
+                font-weight: 400;
+                .font-size(26);
+                color: @white-color;
+            }
+            .kkc-days, .kkc-hours, .kkc-min, .kkc-sec {
+                .font-size(42);
+                margin-left: .5rem;
+                margin-right: 5px;
+                font-weight: 900;
+                font-style: normal;
+                color: @brand-color;
+                font-family: @cbx-base-font;
+            }
+            /*.kkc-days {
+                color: #ffcc00;
+            }
+            .kkc-hours {
+                color: #ff8a00;
+            }
+            .kkc-min {
+                color: #8ac329;
+            }
+            .kkc-sec {
+                color: #ffdd02;
+            }*/
+
+            .kkc-days-text, .kkc-hours-text, .kkc-min-text, .kkc-sec-text {
+                //text-transform: uppercase;
+                margin-right: 1rem;
+                .font-size(26);
+                font-weight: 300;
+
+
+
+            }
+        }
+    }
+}
+/*Owl Slider*/
+#cbx-main-slider .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/*Owl Slider*/
+/*************************
+SLIDER end
+**************************/
+
+
+
+
+
+
+
+

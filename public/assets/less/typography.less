@@ -1,0 +1,342 @@
+/*************************
+TYPOGRAPHY start
+**************************/
+
+@import "mixins.less";
+@import "variables.less";
+
+
+
+/*******NORMAL COMMON STYLE start**********/
+html {
+    font-size: 62.5%;
+}
+
+body{
+    background: @body-bg;
+    font-family:@cbx-heading-font;
+    .font-size(@font-size-base);
+    padding: 0;
+    margin: 0;
+    color: @text-p;
+    line-heaight: 2.4rem;
+}
+p {
+    font-family:@cbx-heading-font;
+    .font-size(@font-size-base);
+}
+
+
+
+h1, .h1 {
+    .font-size(68);
+    line-height: 7.2rem;
+}
+
+h2, .h2 {
+    .font-size(42);
+    line-height: 4.8rem;
+}
+
+h3, .h3 {
+    .font-size(26);
+    line-height: 4.2rem;
+    font-family: @cbx-base-font;
+    font-weight: 700;
+    color: @black-color;
+    letter-spacing: 1px;
+    a {
+        color: inherit;
+        &:hover {
+            color: @brand-color;
+        }
+    }
+}
+
+h4, .h4 {
+    .font-size(16);
+    line-height: 2.4rem;
+    font-family: @cbx-heading-font;
+    font-weight: 700;
+    color: @black-color;
+    a {
+        color: inherit;
+        &:hover {
+            color: @brand-color;
+        }
+    }
+}
+
+h5, .h5 {
+    .font-size(16);
+    line-height: 2.4rem;
+}
+
+h6, .h6 {
+    .font-size(14);
+    line-height: 2.4rem;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: @black-color;
+    outline: 0;
+    -webkit-transition: all 0.2 ease;
+    transition: all 0.2s linear;
+    &:focus, &:hover, &.active {
+        color: @brand-color;
+        text-decoration: none;
+        outline: 0;
+        border: 0;
+    }
+}
+
+button:focus, button:active,
+.btn:focus, .btn:active,
+input[type="submit"]:focus, input[type="submit"]:active,
+input[type="button"]:focus, input[type="button"]:active {
+    outline: none;
+}
+
+.cbx-table {
+    thead {
+        tr {
+            .bg-rgba(@brand-color, 0.2);
+            th {
+                border-bottom: 0;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                font-family: @cbx-base-font;
+                letter-spacing: 1px;
+                color: @black-color;
+                text-align: center;
+            }
+        }
+    }
+    tbody {
+        tr {
+            td, th {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                border-top: 4px solid @body-bg;
+                .bg-rgba(@brand-color, 0.05);
+                text-align: center;
+                border-right: 2px solid @body-bg;
+                &:hover {
+                    .bg-rgba(@brand-color, 0.1);
+                }
+            }
+            th {
+                .bg-rgba(@brand-color, 0.1);
+
+            }
+        }
+    }
+}
+
+blockquote {
+    overflow: hidden;
+    width: 100%;
+    .font-size(@font-size-base);
+    color: @black-color;
+    opacity: .95;
+    font-weight: 400;
+    margin: 2rem 0;
+    display: block;
+    padding: 4rem;
+    .bg-rgba(@brand-color, .1);
+    font-style: italic;
+    position:relative;
+    border-left: 0;
+    border-radius: 22px 0 22px 0;
+    &:after {
+        content: "\f10e";
+        font-family: FontAwesome;
+        right:8px;
+        position:absolute;
+        bottom:-20px;
+        .font-size(51);
+        color: @white-color;
+        opacity: 1;
+    }
+    &:before {
+        content: "\f10d";
+        font-family: FontAwesome;
+        left:-1px;
+        position:absolute;
+        top:-16px;
+        .font-size(51);
+        color: @white-color;
+        opacity: 1;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.cbx-btn {
+    background: @brand-color;
+    padding: 1rem 3rem;
+    letter-spacing: 1px;
+    font-family: @cbx-base-font;
+    color: @white-color;
+    &:hover {
+        background: @brand-dark;
+        color: @white-color;
+        border-radius: 4px;
+    }
+}
+.cbx-btn-brand {
+    background: @brand-color;
+    color: @white-color;
+    &:hover {
+        background: @brand-dark;
+        color: @white-color;
+    }
+}
+.cbx-btn-big {
+    .font-size(26);
+}
+.cbx-btn-md {
+    .font-size(20);
+}
+
+.innerpage-subtitle {
+    color: @black-color;
+    font-weight: 700;
+    font-family: @cbx-base-font;
+    .font-size(26);
+    letter-spacing: 1px;
+}
+.innerpage-section {
+    margin-bottom: 3rem;
+}
+
+.btn-heading {
+    margin-top: 1.5rem;
+    display: inline-block;
+}
+
+.cbx-inner {
+    padding: 11rem 0 13rem;
+}
+.cbx-heading {
+    position: relative;
+    margin-bottom: 6.8rem;
+    h2, h1 {
+        span {
+            font-family: @cbx-heading-font;
+            color: @brand-color;
+            opacity: .1;
+            text-transform: uppercase;
+            .font-size(110);
+            font-weight: 900;
+            margin-left: 8rem;
+            line-height: 30px;
+
+        }
+        i {
+            position: absolute;
+            top: -9px;
+            left: 0;
+            font-family: @cbx-base-font;
+            color: @black-color;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: 1px;
+            span {
+                position: relative;
+                top: -8px;
+                right: 75px;
+                background: @black-color;
+                width: 200px;
+                height: 1px;
+                display: inline-block;
+                opacity: 1;
+            }
+        }
+
+    }
+}
+
+.cbx-heading-page {
+    position: relative;
+    margin-bottom: 0;
+    h2, h1 {
+        span {
+            font-family: @cbx-heading-font;
+            color: @brand-color;
+            opacity: .2;
+            text-transform: uppercase;
+            .font-size(110);
+            font-weight: 900;
+            margin-left: 8rem;
+            line-height: 30px;
+
+        }
+        i {
+            position: absolute;
+            top: -9px;
+            left: 0;
+            font-family: @cbx-base-font;
+            color: @white-color;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: 2px;
+            span {
+                position: relative;
+                top: -8px;
+                right: 75px;
+                background: @white-color;
+                width: 200px;
+                height: 1px;
+                display: inline-block;
+                opacity: 1;
+            }
+        }
+
+    }
+}
+
+.cbx-right {
+    text-align: right;
+}
+
+.cbxmapcanvas{
+    min-height:400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*************************
+TYPOGRAPHY end
+**************************/
+
+
+
+
+
+
+
+
+
+

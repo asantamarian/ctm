@@ -1,0 +1,74 @@
+/*************************
+INNER COMMON start
+**************************/
+.cbx-blog-page {
+
+    .cbx-inner {
+        background: @body-bg;
+    }
+    .single-blog .blog-inner .title-area .title {
+        background: @body-bg;
+    }
+}
+.cbx-banner {
+    background: url('http://placehold.it/1920x600') center center repeat-x fixed;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+    .cbx-inner {
+        .bg-rgba(@black-color, 0.5);
+        padding: 10rem 0 10rem;
+    }
+    .cbx-breadcrumb-area {
+        .breadcrumb {
+            background: transparent;
+            padding: 0;
+            li {
+                color:  @text-ash;
+                .font-size(16);
+                font-weight: 600;
+                a {
+                    color: inherit;
+                    font-size: inherit;
+                    font-weight: inherit;
+                }
+            }
+            .active {
+                color: @brand-color;
+                font-weight: 400;
+            }
+        }
+        .breadcrumb>li+li:before {
+            padding: 0 5px;
+            color: @brand-color;
+            content: "/\00a0";
+            opacity: .7;
+        }
+    }
+    .cbx-heading {
+        margin-bottom: 0rem;
+        h2 {
+            i {
+                color: @white-color;
+                span {
+                    background: @white-color;
+                }
+            }
+
+        }
+    }
+}
+
+/*************************
+INNER COMMON end
+**************************/
+
+
+
+
+
+
+
+

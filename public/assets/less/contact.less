@@ -1,0 +1,101 @@
+#cbx-contact {
+    .cbx-sub-heading {
+        color: @brand-color;
+        .font-size(25);
+        margin-top: 5rem;
+    }
+    .innerpage-section {
+        margin-bottom: 6.8rem;
+    }
+
+    #cbxemail-error, .error {
+        font-family: @cbx-base-font;
+        font-style: italic;
+        font-weight: 700;
+        color: @brand-color2;
+        float: right;
+        font-size: 14px;
+        opacity: .8;
+    }
+
+    .form-control {
+        background: @white-color;
+        background-image: none;
+        border-radius: 0;
+        color: @text-p;
+        display: block;
+        font-size: 14px;
+        height: 50px;
+        line-height: 1.42857;
+        padding: 6px 12px;
+        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+        border: 1px solid @white-color;
+        box-shadow: none;
+        &:hover, &:focus, &:active {
+            border: 1px solid @brand-color;
+        }
+    }
+
+    .cbx-form-control {
+        width: 85%;
+        float: right;
+    }
+
+    .cbx-contact-icon {
+        background: @brand-color;
+        width: 65px;
+        height: 50px;
+        font-size: 25px;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 49px;
+        color: @white-color;
+    }
+
+    .form-group {
+        margin-bottom: 4rem;
+    }
+
+    .cbx-textarea-control {
+        background: @white-color;
+        height: 200px;
+    }
+
+    .cbx-send-btn {
+        text-transform: uppercase;
+        .font-size(18);
+        border-radius: 0;
+        font-weight: 700;
+        padding: 15px 10px;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+        background: @brand-color2;
+        font-family: @cbx-base-font;
+        color: @white-color;
+        letter-spacing: 1px;
+        &:hover {
+            background: @brand-color;
+            color: @black-color;
+        }
+
+    }
+
+    .cbx-contact-info {
+        li {
+            font-family: @cbx-base-font;
+            .font-size(18);
+            color: @text-ash;
+            letter-spacing: 1px;
+            i {
+                .font-size(30);
+                color: @brand-color;
+                margin-right: 10px;
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,122 @@
+/*************************
+ALBUM SINGLE start
+**************************/
+.cbx-album-single {
+    iframe {
+        border: 0;
+        width: 100%;
+    }
+    .single-album, .single-main-info {
+        float: left;
+    }
+    .single-album {
+        width: 30%;
+        margin-bottom: 4.2rem;
+        .album-inner {
+            figure {
+                position: relative;
+                figcaption {
+                    opacity: 1;
+                    .bg-rgba(@brand-color, 0.5);
+                }
+            }
+            &:hover {
+                figure {
+                    figcaption {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+    .single-main-info {
+        width: 70%;
+        background: @black-color;
+        padding: 2rem 2rem 2rem 3rem;
+        min-height: 431px;
+        color: @text-ash;
+        .title {
+            font-family: @cbx-base-font;
+            color: @white-color;
+            font-weight: 700;
+            letter-spacing: 1px;
+            a {
+                color: inherit;
+            }
+        }
+        .info-list {
+            margin-bottom: 1.6rem;
+            li {
+                color: @white-color;
+                opacity: .8;
+                font-family: @cbx-heading-font;
+                span {
+                    color: @brand-color;
+                    font-family: @cbx-base-font;
+                    margin-right: 5px;
+                    letter-spacing: 1px;
+                }
+                a {
+                    color: inherit;
+                    &:hover {
+                        color: @brand-color;
+                    }
+                }
+            }
+        }
+        .short-text {
+            margin-bottom: 2.6rem;
+        }
+    }
+    .album-single-section {
+        overflow: hidden;
+        width: 100%;
+    }
+    footer {
+        .cbx-social-share {
+            .title {
+                font-family: @cbx-base-font;
+                color: @brand-color;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            ul {
+                margin-left: 0;
+                padding: 1rem 0;
+                border-top: 1px solid #eee;
+                li {
+                    a {
+                        height: 50px;
+                        width: 50px;
+                        background: @white-color;
+                        color: @brand-color;
+                        display: inline-block;
+                        text-align: center;
+                        border-radius: 50%;
+                        i {
+                            font-size: 26px;
+                            line-height: 50px;
+                        }
+                        &:hover {
+                            background: @brand-color;
+                            color: @white-color;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+/*************************
+ALBUM SINGLE end
+**************************/
+
+
+
+
+
+
+
+

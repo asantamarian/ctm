@@ -14,5 +14,29 @@
 */
 
 const Route = use('Route')
+const Helpers = use('Helpers')
+const {ioc} = require('@adonisjs/fold')
+var util = require('util')
 
 Route.on('/').render('welcome')
+Route.get('/login/google', 'Account/ExternalLogin.redirect')
+Route.get('/google/callback', 'Account/ExternalLogin.callback')
+
+Route.any('/:module/:controller/:action',  ({view ,request, response,params,auth, session}) => {
+  
+    const module = params.module
+    
+    const controller = params.controller
+    
+    const action = params.action
+    
+    
+    const controllerPath = `App/Controllers/Http/${module}`
+    
+    const url = `${controllerPath}/${controller}.${action}`
+    
+    const controllerInstance = ioc.makeFunc(url)
+   
+    return controllerInstance.method.apply(controllerInstance.instance,[{view,request,response,params,auth, session}])
+    
+}).middleware(['autenticacion:session'])

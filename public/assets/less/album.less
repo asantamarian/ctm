@@ -1,0 +1,117 @@
+/*************************
+ALBUM start
+**************************/
+.cbx-album {
+    .single-album {
+        width: 33.3333%;
+        float: left;
+        .album-inner {
+            figure {
+                position: relative;
+                figcaption {
+                    opacity: 0;
+                    .bg-rgba(@brand-color, 0.98);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    -ms-transform: scale(0); /* IE 9 */
+                    -webkit-transform: scale(0); /* Safari */
+                    transform: scale(0);
+                    transition: all 0.3s linear;
+
+                    .cbx-hover-link {
+                        display: table;
+                        height: 100%;
+                        width: 100%;
+                        -ms-transform: scale(0); /* IE 9 */
+                        -webkit-transform: scale(0); /* Safari */
+                        transform: scale(0);
+                        transition: all 0.6s linear;
+                        opacity: 0;
+                        .cbx-vertical {
+                            display: table-cell;
+                            text-align: center;
+                            vertical-align: middle;
+                            a {
+                                i {
+                                    .font-size(68);
+                                    color: @white-color;
+                                    -webkit-transition: all 1.2 ease;
+                                    transition: all 0.2s linear;
+                                    &:hover {
+                                        color: @black-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .title {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                    .font-size(26);
+                    color: @white-color;
+                    font-family: @cbx-base-font;
+                    font-weight: 400;
+                    text-align: center;
+                    padding: 1.5rem 2rem;
+                    width: 100%;
+                    -ms-transform: scale(0); /* IE 9 */
+                    -webkit-transform: scale(0); /* Safari */
+                    transform: scale(0);
+                    -webkit-transition: all 1.2 ease;
+                    transition: all 0.6s linear;
+                    opacity: 0;
+                    letter-spacing: 1px;
+                    a {
+                        color: inherit;
+                        &:hover {
+                            color: @white-color;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                figure {
+                    figcaption {
+                        opacity: 1;
+                        -ms-transform: scale(1); /* IE 9 */
+                        -webkit-transform: scale(1); /* Safari */
+                        transform: scale(1);
+                        .cbx-hover-link {
+                            opacity: 1;
+                            -ms-transform: scale(1); /* IE 9 */
+                            -webkit-transform: scale(1); /* Safari */
+                            transform: scale(1);
+
+                        }
+                    }
+                    .title {
+
+                        opacity: 1;
+                        width: 100%;
+                        -ms-transform: scale(1); /* IE 9 */
+                        -webkit-transform: scale(1); /* Safari */
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+}
+/*************************
+ALBUM end
+**************************/
+
+
+
+
+
+
+
+
+
+

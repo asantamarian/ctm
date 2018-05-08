@@ -1,0 +1,21 @@
+.cbxmusicplayer{
+    background: #f9f9f9 !important;
+    color: #1d1e1c
+
+}
+.cbxmusicplayer .mejs-container,.cbxmusicplayer .mejs-playlist{
+    background: #f9f9f9 !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.cbxmusicplayer .mejs-playlist ul{}
+.cbxmusicplayer .mejs-playlist ul li{
+    border-bottom: 1px solid #f3c14b !important;
+    color: #1d1e1c;
+    padding: 10px 0;
+    height: auto;
+}
+.cbxmusicplayer .mejs-playlist ul li.current{
+    color: #f3c14b !important;
+}

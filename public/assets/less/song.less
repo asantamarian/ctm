@@ -1,0 +1,152 @@
+/*************************
+SONGS start
+**************************/
+.cbx-songs {
+    background: @white-color;
+    .cbx-inner {
+        background: @body-bg-deep;
+    }
+
+    .cbxmusicplayer {
+        color: @black-color;
+        .mejs-controls-wrap{
+            .bg-rgba(@black-color, 0.9);
+            position: absolute;
+            top: 0;
+            width: 97%;
+            min-height: 180px;
+            overflow: hidden;
+            box-sizing: border-box;
+            left: 18px;
+        }
+
+        //Song List Control
+        .mejs-container,
+        .mejs-playlist {
+            background: transparent !important;
+            height: auto !important;
+            position: static;
+            width: 100% !important;
+            margin-top: 190px;
+        }//Song List Control
+
+        .mejs-container {
+            background: transparent !important;
+            height: auto !important;
+
+
+            //player Control
+            .mejs-controls {
+                top: 75px;
+                bottom: auto;
+                background: @white-color;
+                .bg-rgba(@black-color, 1);
+                border: 3px solid rgba(255, 255, 255, .2);
+                -webkit-background-clip: padding-box; /* for Safari */
+                background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+                border-radius: 2px;
+                height: 70px;
+                width: 70%;
+                left: auto;
+                right: 20px;
+                .mejs-time-rail {
+                    .mejs-time-total {
+                        .bg-rgba(@brand-color, 0.3);
+                        .mejs-time-current {
+                            background: @brand-color;
+                            border-right: 5px solid @brand-color2;
+                        }
+                        .mejs-time-loaded {
+                            .bg-rgba(@brand-color2, 0.2);
+                        }
+                    }
+                }
+                .mejs-button,
+                .mejs-time-rail,
+                .mejs-time,
+                .mejs-horizontal-volume-slider {
+                    margin-top: 18px;
+                    display: inline-block;
+                }
+                .mejs-time {
+                    color: @brand-color2;
+                }
+            }//player Control
+
+
+            .mejs-albumbox {
+                top: 0;
+                position: absolute;
+                float: left;
+                width: 26%;
+            }
+            .mejs-songtitlecontrol {
+                font-family: @cbx-base-font;
+                top: 20px;
+                position: absolute;
+                float: left;
+                right: 18px;
+                width: 70%;
+                .font-size(26);
+                margin: 0;
+                color: @white-color;
+                letter-spacing: 1px;
+                font-weight: 400;
+            }
+        }
+        .mejs-playlist {
+            position: static;
+            ul {
+                padding: 0 !important;
+                background: transparent;
+                li{
+                    background: @body-bg ;
+                    margin-bottom: 6px;
+                    color: @black-color;
+                    padding: 3rem 2rem;
+                    height: auto;
+                    display: block;
+                    font-size: 16px;
+                    font-family: @cbx-heading-font;
+                    font-weight: 600;
+                    .musicdownload {
+                        float: right;
+                    }
+                }
+                li.current {
+                    color: @brand-color;
+                    background: @white-color;
+                }
+            }
+        }
+    }
+    .cbxmusicplayer .mejs-container .mejs-controls {
+
+        //padding-top: 18px;
+    }
+
+}
+
+.cbx-songs-inner {
+    overflow: hidden;
+    width: 100%;
+    background: transparent;
+    .cbx-inner {
+        background: transparent;
+        padding: 0;
+    }
+    .cbxmusicplayer .mejs-playlist ul li {
+        background: #f1f1f1;
+    }
+}
+/*************************
+SONGS end
+**************************/
+
+
+
+
+
+
+
+
