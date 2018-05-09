@@ -66,7 +66,7 @@ h3 a,
 }
 h3 a:hover,
 .h3 a:hover {
-  color: #f23030;
+  color: #000000;
 }
 h4,
 .h4 {
@@ -85,7 +85,7 @@ h4 a,
 }
 h4 a:hover,
 .h4 a:hover {
-  color: #f23030;
+  color: #000000;
 }
 h5,
 .h5 {
@@ -116,7 +116,7 @@ a {
 a:focus,
 a:hover,
 a.active {
-  color: #f23030;
+  color: #000000;
   text-decoration: none;
   outline: 0;
   border: 0;
@@ -132,7 +132,7 @@ input[type="button"]:active {
   outline: none;
 }
 .cbx-table thead tr {
-  background: rgba(242, 48, 48, 0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 .cbx-table thead tr th {
   border-bottom: 0;
@@ -148,16 +148,16 @@ input[type="button"]:active {
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-top: 4px solid #f9f9f9;
-  background: rgba(242, 48, 48, 0.05);
+  background: rgba(0, 0, 0, 0.05);
   text-align: center;
   border-right: 2px solid #f9f9f9;
 }
 .cbx-table tbody tr td:hover,
 .cbx-table tbody tr th:hover {
-  background: rgba(242, 48, 48, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 .cbx-table tbody tr th {
-  background: rgba(242, 48, 48, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 blockquote {
   overflow: hidden;
@@ -172,7 +172,7 @@ blockquote {
   margin: 2rem 0;
   display: block;
   padding: 4rem;
-  background: rgba(242, 48, 48, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   font-style: italic;
   position: relative;
   border-left: 0;
@@ -213,23 +213,23 @@ ul li {
   padding: 0;
 }
 .cbx-btn {
-  background: #f23030;
+  background: #000000;
   padding: 1rem 3rem;
   letter-spacing: 1px;
   font-family: 'Oswald', sans-serif;
   color: #fff;
 }
 .cbx-btn:hover {
-  background: #ef0f0f;
+  background: #000000;
   color: #fff;
   border-radius: 4px;
 }
 .cbx-btn-brand {
-  background: #f23030;
+  background: #000000;
   color: #fff;
 }
 .cbx-btn-brand:hover {
-  background: #ef0f0f;
+  background: #000000;
   color: #fff;
 }
 .cbx-btn-big {
@@ -271,7 +271,7 @@ ul li {
 .cbx-heading h2 span,
 .cbx-heading h1 span {
   font-family: 'Open Sans', sans-serif;
-  color: #f23030;
+  color: #000000;
   opacity: .1;
   text-transform: uppercase;
   font-size: 110px;
@@ -311,7 +311,7 @@ ul li {
 .cbx-heading-page h2 span,
 .cbx-heading-page h1 span {
   font-family: 'Open Sans', sans-serif;
-  color: #f23030;
+  color: #000000;
   opacity: .2;
   text-transform: uppercase;
   font-size: 110px;
@@ -359,12 +359,12 @@ Header start
 **************************/
 .cbx-header {
   /*TOP MAIN STRACTURE*/
-  background: #f23030;
+  background: #000000;
   /*DROPDOWN MENU HOVER EFFECT*/
   /*TOP MAIN STRACTURE*/
 }
 .cbx-header .cbx-top-left-col {
-  background: #f23030;
+  background: #000000;
   height: 110px;
   -webkit-transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
@@ -397,7 +397,7 @@ Header start
   padding-left: 2px;
 }
 .cbx-header .cbx-top-right-social .social-area ul li a {
-  background: rgba(242, 48, 48, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   height: 36px;
   width: 36px;
   display: inline-block;
@@ -406,20 +406,20 @@ Header start
   line-height: 33px;
   font-size: 2.2rem;
   line-height: 3.3000000000000003rem;
-  color: #f23030;
+  color: #000000;
   border-radius: 50%;
 }
 .cbx-header .cbx-top-right-social .social-area ul li a:hover {
   color: #fff;
-  background: #f23030;
+  background: #000000;
   opacity: 1;
 }
 .cbx-header .cbx-top-right-menu {
   background: #1e1d1c;
 }
 .cbx-header .cbx-top-left .cbx-top-left-inner {
-  max-width: 270px;
-  float: right;
+  max-width: 500px;
+  float: left;
 }
 .cbx-header .cbx-top-left .cbx-top-left-inner .main-logo {
   padding: 2.2rem;
@@ -463,7 +463,7 @@ Header start
 .cbx-header .cbx-header-menu .cbx-navbar .cbx-nav li a:hover,
 .cbx-header .cbx-header-menu .cbx-navbar .cbx-nav li a:focus,
 .cbx-header .cbx-header-menu .cbx-navbar .cbx-nav li a:active {
-  color: #f23030;
+  color: #000000;
 }
 .cbx-header .cbx-header-menu .cbx-navbar .cbx-nav li:last-child {
   float: right;
@@ -473,7 +473,7 @@ Header start
   line-height: 39px;
   font-size: 2.6rem;
   line-height: 3.9000000000000004rem;
-  color: #f23030;
+  color: #000000;
   line-height: 0;
 }
 .cbx-header .cbx-header-menu .cbx-navbar .cbx-nav li:last-child a:hover {
@@ -523,7 +523,7 @@ Header start
 .cbx-header .cbx-header-menu .cbx-navbar .dropdown-menu > li > a:focus,
 .cbx-header .cbx-header-menu .cbx-navbar .dropdown-menu > li > a:hover {
   color: #fff;
-  background: rgba(242, 48, 48, 0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 .cbx-header .cbx-header-menu .dropdown-submenu {
   position: relative;
@@ -574,7 +574,7 @@ Header start
   margin-left: 4rem;
 }
 .cbx-header .cbx-header-menu .cbx-right-menu .cbx-search a {
-  color: #f23030;
+  color: #000000;
 }
 .cbx-header .cbx-header-menu .cbx-right-menu .cbx-search a i {
   font-size: 20px;
@@ -583,7 +583,7 @@ Header start
   margin-left: 4rem;
   margin-top: 5px;
   display: inline-block;
-  color: #f23030;
+  color: #000000;
 }
 .cbx-header .cbx-header-menu .navbar-header .cbx-search .search_submit {
   color: #fff;
@@ -592,8 +592,8 @@ Header start
   font-size: 20px;
 }
 .cbx-header .cbx-header-menu .navbar-default .navbar-toggle {
-  background: #f23030;
-  border-color: #f23030;
+  background: #000000;
+  border-color: #000000;
 }
 .cbx-header .cbx-header-menu .navbar-default .navbar-toggle span {
   background: #fff;
@@ -657,13 +657,13 @@ Header start
 .cbx-header .navbar-default .navbar-nav > .active > a,
 .cbx-header .navbar-default .navbar-nav > .active > a:focus,
 .cbx-header .navbar-default .navbar-nav > .active > a:hover {
-  color: #f23030 !important;
+  color: #000000 !important;
   background-color: transparent;
 }
 .cbx-header .navbar-default .navbar-nav > .open > a,
 .cbx-header .navbar-default .navbar-nav > .open > a:focus,
 .cbx-header .navbar-default .navbar-nav > .open > a:hover {
-  color: #f23030 !important;
+  color: #000000 !important;
   background-color: transparent;
 }
 .cbx-header .cbx-header-menu .dropdown-submenu > a:after {
@@ -701,28 +701,28 @@ Header start
 .cbx-header #cbx-header-menu-black .cbx-navbar .dropdown-menu > li > a:focus,
 .cbx-header #cbx-header-menu-black .cbx-navbar .dropdown-menu > li > a:hover {
   color: #fff;
-  background-color: #f23030;
+  background-color: #000000;
 }
 .cbx-header #cbx-header-menu-black .cbx-right-menu li a {
   color: #fff;
 }
 .cbx-header #cbx-header-menu-black .cbx-right-menu .cbx-search a {
-  color: #f23030;
+  color: #000000;
 }
 .cbx-header #cbx-header-menu-black .navbar-default .navbar-nav > .active > a,
 .cbx-header #cbx-header-menu-black .navbar-default .navbar-nav > .active > a:focus,
 .cbx-header #cbx-header-menu-black .navbar-default .navbar-nav > .active > a:hover {
   color: #fff !important;
-  background-color: #f23030;
+  background-color: #000000;
 }
 .cbx-header #cbx-header-menu-black .navbar-default .navbar-nav > .open > a,
 .cbx-header #cbx-header-menu-black .navbar-default .navbar-nav > .open > a:focus,
 .cbx-header #cbx-header-menu-black .navbar-default .navbar-nav > .open > a:hover {
   color: #fff;
-  background-color: #f23030;
+  background-color: #000000;
 }
 .cbx-header #cbx-header-menu-black .cbx-header-menu .dropdown-submenu > a:after {
-  border-color: transparent transparent transparent #f23030;
+  border-color: transparent transparent transparent #000000;
   margin-top: 7px;
 }
 .cbx-header .cbx-search {
@@ -776,7 +776,7 @@ Header start
   padding-left: 15px;
 }
 .cbx-header .cbx-search .search:focus:hover {
-  background: #f23030;
+  background: #000000;
 }
 .cbx-header .cbx-search .search_submit {
   padding-top: 1rem;
@@ -787,7 +787,7 @@ Header start
   width: 700px;
   z-index: 1;
   cursor: text;
-  background: #f23030;
+  background: #000000;
 }
 .cbx-header .cbx-search input[type="submit"]:hover {
   opacity: 0.8;
@@ -930,7 +930,7 @@ SLIDER start
 .cbx-slider .owl-theme .owl-controls .owl-buttons div {
   background: #1e1d1c;
   border-radius: 50%;
-  color: #f23030;
+  color: #000000;
   opacity: 0.4;
   padding: 0;
   width: 60px;
@@ -978,7 +978,7 @@ SLIDER start
   z-index: 999;
   padding-top: 10px;
   padding-bottom: 15px;
-  border-bottom-color: #f23030;
+  border-bottom-color: #000000;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3s linear;
   box-shadow: 0 3px 5px rgba(255, 255, 255, 0.2);
@@ -1250,7 +1250,7 @@ SLIDER start
   margin-right: 5px;
   font-weight: 900;
   font-style: normal;
-  color: #f23030;
+  color: #000000;
   font-family: 'Oswald', sans-serif;
 }
 .cbx-slider .big-countdown .kkcountdown-box .kkc-days-text,
@@ -1302,14 +1302,14 @@ SUBSCRIBE start
   height: 55px;
   border-radius: 0;
   background: #fff;
-  border: 1px solid #f23030;
+  border: 1px solid #000000;
 }
 #cbx-subscribe .subscribe-form .form-control:focus {
   box-shadow: none;
-  border: 1px solid #f23030;
+  border: 1px solid #000000;
 }
 #cbx-subscribe .subscribe-form .cbx-submit-btn {
-  background: #f23030;
+  background: #000000;
   height: 55px;
   padding: 0 40px;
   border: none;
@@ -1324,7 +1324,7 @@ SUBSCRIBE start
   font-size: 30px;
 }
 #cbx-subscribe .subscribe-form .cbx-submit-btn:hover {
-  background: #ef0f0f;
+  background: #000000;
   border-radius: 4px;
 }
 /*************************
@@ -1342,7 +1342,7 @@ ALBUM start
 }
 .cbx-album .single-album .album-inner figure figcaption {
   opacity: 0;
-  background: rgba(242, 48, 48, 0.98);
+  background: rgba(0, 0, 0, 0.98);
   position: absolute;
   top: 0;
   left: 0;
@@ -1446,7 +1446,7 @@ ALBUM end
 EVENT start
 **************************/
 .cbx-event {
-  background: url('http://placehold.it/1920x1200') center center repeat-x fixed;
+  background: url('/soon/images/gente.jpg') center center repeat-x fixed;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -1471,7 +1471,7 @@ EVENT start
   padding: 1.5rem;
 }
 .cbx-event .single-event .event-info .date {
-  color: #f23030;
+  color: #000000;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1497,7 +1497,7 @@ EVENT start
   color: #999;
 }
 .cbx-event .single-event .event-info .location i {
-  color: #f23030;
+  color: #000000;
 }
 .cbx-event .single-event .cbx-btn {
   float: right;
@@ -1507,7 +1507,7 @@ EVENT start
   background: #f9f9f9;
 }
 .cbx-event .single-event:hover .event-info .date {
-  color: #ef0f0f;
+  color: #000000;
 }
 .cbx-event .single-event:hover .event-info .title {
   color: #1e1d1c;
@@ -1516,7 +1516,7 @@ EVENT start
   color: #999;
 }
 .cbx-event .single-event .event-info .location i {
-  color: #f23030;
+  color: #000000;
   opacity: .5;
   margin-right: .5rem;
 }
@@ -1534,7 +1534,7 @@ EVENT end
   background: #f1f1f1;
 }
 .cbx-event-list-page .single-event .event-info .date {
-  color: #ef0f0f;
+  color: #000000;
 }
 .cbx-event-list-page .single-event .event-info .title {
   color: #1e1d1c;
@@ -1569,7 +1569,7 @@ EVENT end
   position: absolute;
   bottom: 0;
   right: 8px;
-  background: rgba(242, 48, 48, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 .cbx-event-single-page .page-header figure figcaption .figcaption-text {
   color: #fff;
@@ -1587,7 +1587,7 @@ EVENT end
 }
 .cbx-event-single-page .page-header .header-action .date,
 .cbx-event-single-page .page-header .header-text .date {
-  color: #f23030;
+  color: #000000;
   font-family: 'Oswald', sans-serif;
   font-size: 26px;
   line-height: 39px;
@@ -1602,7 +1602,7 @@ EVENT end
 }
 .cbx-event-single-page .page-header .header-action .location span,
 .cbx-event-single-page .page-header .header-text .location span {
-  color: #f23030;
+  color: #000000;
   font-family: 'Oswald', sans-serif;
   margin-right: .5rem;
   letter-spacing: 1px;
@@ -1626,7 +1626,7 @@ EVENT end
   margin-bottom: .4rem;
 }
 .cbx-event-single-page .page-header .header-text p span {
-  color: #f23030;
+  color: #000000;
   font-weight: 600;
 }
 .cbx-event-single-page .page-header .header-action {
@@ -1666,11 +1666,11 @@ EVENT end
   text-align: center;
 }
 .cbx-event-single-page .event-single-sponsor .single-sponsor:hover {
-  border: 1px solid #f23030;
+  border: 1px solid #000000;
 }
 .cbx-event-single-page footer .cbx-social-share .title {
   font-family: 'Oswald', sans-serif;
-  color: #f23030;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -1683,7 +1683,7 @@ EVENT end
   height: 50px;
   width: 50px;
   background: #fff;
-  color: #f23030;
+  color: #000000;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
@@ -1693,7 +1693,7 @@ EVENT end
   line-height: 50px;
 }
 .cbx-event-single-page footer .cbx-social-share ul li a:hover {
-  background: #f23030;
+  background: #000000;
   color: #fff;
 }
 /*EVENT SINGLE PAGE END*/
@@ -1748,14 +1748,14 @@ SONGS start
   right: 20px;
 }
 .cbx-songs .cbxmusicplayer .mejs-container .mejs-controls .mejs-time-rail .mejs-time-total {
-  background: rgba(242, 48, 48, 0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 .cbx-songs .cbxmusicplayer .mejs-container .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-current {
-  background: #f23030;
-  border-right: 5px solid #f23030;
+  background: #000000;
+  border-right: 5px solid #000000;
 }
 .cbx-songs .cbxmusicplayer .mejs-container .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-loaded {
-  background: rgba(242, 48, 48, 0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 .cbx-songs .cbxmusicplayer .mejs-container .mejs-controls .mejs-button,
 .cbx-songs .cbxmusicplayer .mejs-container .mejs-controls .mejs-time-rail,
@@ -1765,7 +1765,7 @@ SONGS start
   display: inline-block;
 }
 .cbx-songs .cbxmusicplayer .mejs-container .mejs-controls .mejs-time {
-  color: #f23030;
+  color: #000000;
 }
 .cbx-songs .cbxmusicplayer .mejs-container .mejs-albumbox {
   top: 0;
@@ -1811,7 +1811,7 @@ SONGS start
   float: right;
 }
 .cbx-songs .cbxmusicplayer .mejs-playlist ul li.current {
-  color: #f23030;
+  color: #000000;
   background: #fff;
 }
 .cbx-songs-inner {
@@ -1867,7 +1867,7 @@ VIDEO start
   line-height: 165px;
   font-size: 11rem;
   line-height: 16.5rem;
-  color: #f23030;
+  color: #000000;
 }
 .cbx-video .cbx-modal {
   background: rgba(30, 29, 28, 0.8);
@@ -1890,7 +1890,7 @@ VIDEO start
   margin-top: -36px;
   font-size: 30px;
   color: #fff;
-  background: #f23030;
+  background: #000000;
   padding: 7px 14px 8px;
   border-radius: 50%;
   opacity: .8;
@@ -1947,7 +1947,7 @@ BAND MEMBERS start
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(242, 48, 48, 0.3);
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   -ms-transform: scale(1);
   /* IE 9 */
@@ -1966,7 +1966,7 @@ BAND MEMBERS start
   transition: all 0.2s linear;
 }
 .cbx-members .single-member figure figcaption .social-area ul li a {
-  color: #f23030;
+  color: #000000;
   background: #1e1d1c;
   width: 42px;
   height: 42px;
@@ -1979,7 +1979,7 @@ BAND MEMBERS start
   line-height: 4.5rem;
 }
 .cbx-members .single-member figure figcaption .social-area ul li a:hover {
-  background: #f23030;
+  background: #000000;
   color: #fff;
 }
 .cbx-members .single-member .member-info {
@@ -2014,13 +2014,13 @@ BAND MEMBERS start
   font-size: 1.6rem;
   line-height: 2.4000000000000004rem;
   text-transform: uppercase;
-  color: #f23030;
+  color: #000000;
 }
 .cbx-members .single-member:hover figure img {
   border-radius: 0;
 }
 .cbx-members .single-member:hover figure figcaption .figcaption-bg {
-  background: rgba(242, 48, 48, 0);
+  background: rgba(0, 0, 0, 0);
   border-radius: 0;
   display: none;
   -ms-transform: scale(1);
@@ -2061,7 +2061,7 @@ BAND MEMBERS end
 }
 .cbx-member-single .single-member .album-inner figure figcaption {
   opacity: 1;
-  background: rgba(242, 48, 48, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 .cbx-member-single .single-member .album-inner:hover figure figcaption {
   opacity: 0;
@@ -2083,7 +2083,7 @@ BAND MEMBERS end
   color: inherit;
 }
 .cbx-member-single .single-main-info .sub-title {
-  color: #f23030;
+  color: #000000;
   font-size: 26px;
   line-height: 39px;
   font-size: 2.6rem;
@@ -2101,7 +2101,7 @@ BAND MEMBERS end
   height: 45px;
   width: 45px;
   background: rgba(255, 255, 255, 0.1);
-  color: #f23030;
+  color: #000000;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
@@ -2111,7 +2111,7 @@ BAND MEMBERS end
   line-height: 48px;
 }
 .cbx-member-single .single-main-info .social-area ul li a:hover {
-  background: #f23030;
+  background: #000000;
   color: #fff;
 }
 .cbx-member-single .single-main-info .info-list {
@@ -2123,7 +2123,7 @@ BAND MEMBERS end
   font-family: 'Open Sans', sans-serif;
 }
 .cbx-member-single .single-main-info .info-list li span {
-  color: #f23030;
+  color: #000000;
   font-family: 'Oswald', sans-serif;
   margin-right: 5px;
   letter-spacing: 1px;
@@ -2132,7 +2132,7 @@ BAND MEMBERS end
   color: inherit;
 }
 .cbx-member-single .single-main-info .info-list li a:hover {
-  color: #f23030;
+  color: #000000;
 }
 .cbx-member-single .single-main-info .short-text {
   margin-bottom: 2.6rem;
@@ -2143,7 +2143,7 @@ BAND MEMBERS end
 }
 .cbx-member-single footer .cbx-social-share .title {
   font-family: 'Oswald', sans-serif;
-  color: #f23030;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -2156,7 +2156,7 @@ BAND MEMBERS end
   height: 50px;
   width: 50px;
   background: #fff;
-  color: #f23030;
+  color: #000000;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
@@ -2166,7 +2166,7 @@ BAND MEMBERS end
   line-height: 50px;
 }
 .cbx-member-single footer .cbx-social-share ul li a:hover {
-  background: #f23030;
+  background: #000000;
   color: #fff;
 }
 /*************************
@@ -2198,7 +2198,7 @@ BLOG start
   font-size: 6.8rem;
   line-height: 10.2rem;
   font-weight: 900;
-  color: #f23030;
+  color: #000000;
   line-height: 5.8rem;
   opacity: .7;
 }
@@ -2262,7 +2262,7 @@ TWITTER start
   line-height: 102px;
   font-size: 6.8rem;
   line-height: 10.2rem;
-  color: #f23030;
+  color: #000000;
 }
 .cbx-twitter .cbx-feed-display .cbx-tweet-feed {
   text-align: center;
@@ -2294,13 +2294,13 @@ TWITTER start
   line-height: 39px;
   font-size: 2.6rem;
   line-height: 3.9000000000000004rem;
-  color: #f23030;
+  color: #000000;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
 }
 .cbx-twitter .cbx-feed-display .cbx-tweet-feed .cbx-username {
-  color: #f23030;
+  color: #000000;
   margin-top: 2.6rem;
 }
 .cbx-twitter .cbx-feed-display .cbx-tweet-feed .cbx-date {
@@ -2318,7 +2318,7 @@ FOOTER start
 **************************/
 .cbx-footer .cbx-inner {
   padding: 2.6rem 0;
-  background: #f23030;
+  background: #000000;
 }
 .cbx-footer .copyright {
   text-align: center;
@@ -2399,12 +2399,12 @@ INNER COMMON start
   font-weight: inherit;
 }
 .cbx-banner .cbx-breadcrumb-area .breadcrumb .active {
-  color: #f23030;
+  color: #000000;
   font-weight: 400;
 }
 .cbx-banner .cbx-breadcrumb-area .breadcrumb > li + li:before {
   padding: 0 5px;
-  color: #f23030;
+  color: #000000;
   content: "/\00a0";
   opacity: .7;
 }
@@ -2451,7 +2451,7 @@ NEWS SINGLE start
   color: inherit;
 }
 .cbx-blog-single .single-blog .blog-inner .article-info dd i {
-  color: #f23030 !important;
+  color: #000000 !important;
 }
 .cbx-blog-single .single-blog .blog-inner article ul {
   margin-left: 20px;
@@ -2487,7 +2487,7 @@ NEWS SINGLE start
 }
 .cbx-blog-single .single-blog .blog-inner article footer .cbx-social-share .title {
   font-family: 'Oswald', sans-serif;
-  color: #f23030;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -2500,7 +2500,7 @@ NEWS SINGLE start
   height: 50px;
   width: 50px;
   background: #fff;
-  color: #f23030;
+  color: #000000;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
@@ -2510,7 +2510,7 @@ NEWS SINGLE start
   line-height: 50px;
 }
 .cbx-blog-single .single-blog .blog-inner article footer .cbx-social-share ul li a:hover {
-  background: #f23030;
+  background: #000000;
   color: #fff;
 }
 /*************************
@@ -2542,7 +2542,7 @@ ALBUM SINGLE start
 }
 .cbx-album-single .single-album .album-inner figure figcaption {
   opacity: 1;
-  background: rgba(242, 48, 48, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 .cbx-album-single .single-album .album-inner:hover figure figcaption {
   opacity: 0;
@@ -2572,7 +2572,7 @@ ALBUM SINGLE start
   font-family: 'Open Sans', sans-serif;
 }
 .cbx-album-single .single-main-info .info-list li span {
-  color: #f23030;
+  color: #000000;
   font-family: 'Oswald', sans-serif;
   margin-right: 5px;
   letter-spacing: 1px;
@@ -2581,7 +2581,7 @@ ALBUM SINGLE start
   color: inherit;
 }
 .cbx-album-single .single-main-info .info-list li a:hover {
-  color: #f23030;
+  color: #000000;
 }
 .cbx-album-single .single-main-info .short-text {
   margin-bottom: 2.6rem;
@@ -2592,7 +2592,7 @@ ALBUM SINGLE start
 }
 .cbx-album-single footer .cbx-social-share .title {
   font-family: 'Oswald', sans-serif;
-  color: #f23030;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -2605,7 +2605,7 @@ ALBUM SINGLE start
   height: 50px;
   width: 50px;
   background: #fff;
-  color: #f23030;
+  color: #000000;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
@@ -2615,14 +2615,14 @@ ALBUM SINGLE start
   line-height: 50px;
 }
 .cbx-album-single footer .cbx-social-share ul li a:hover {
-  background: #f23030;
+  background: #000000;
   color: #fff;
 }
 /*************************
 ALBUM SINGLE end
 **************************/
 #cbx-contact .cbx-sub-heading {
-  color: #f23030;
+  color: #000000;
   font-size: 25px;
   line-height: 37.5px;
   font-size: 2.5rem;
@@ -2637,7 +2637,7 @@ ALBUM SINGLE end
   font-family: 'Oswald', sans-serif;
   font-style: italic;
   font-weight: 700;
-  color: #f23030;
+  color: #000000;
   float: right;
   font-size: 14px;
   opacity: .8;
@@ -2659,14 +2659,14 @@ ALBUM SINGLE end
 #cbx-contact .form-control:hover,
 #cbx-contact .form-control:focus,
 #cbx-contact .form-control:active {
-  border: 1px solid #f23030;
+  border: 1px solid #000000;
 }
 #cbx-contact .cbx-form-control {
   width: 85%;
   float: right;
 }
 #cbx-contact .cbx-contact-icon {
-  background: #f23030;
+  background: #000000;
   width: 65px;
   height: 50px;
   font-size: 25px;
@@ -2696,13 +2696,13 @@ ALBUM SINGLE end
   -ms-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
-  background: #f23030;
+  background: #000000;
   font-family: 'Oswald', sans-serif;
   color: #fff;
   letter-spacing: 1px;
 }
 #cbx-contact .cbx-send-btn:hover {
-  background: #f23030;
+  background: #000000;
   color: #1e1d1c;
 }
 #cbx-contact .cbx-contact-info li {
@@ -2719,7 +2719,7 @@ ALBUM SINGLE end
   line-height: 45px;
   font-size: 3rem;
   line-height: 4.5rem;
-  color: #f23030;
+  color: #000000;
   margin-right: 10px;
 }
 /*RESPONSIVE STYLE */
@@ -3307,7 +3307,7 @@ ALBUM SINGLE end
 .cbx-switcher-btn {
   padding: 0px 8px;
   font-weight: bold;
-  background: #f23030;
+  background: #000000;
   font-size: 25px;
   color: #fff;
   position: absolute;

@@ -418,8 +418,8 @@ Header start
   background: #1e1d1c;
 }
 .cbx-header .cbx-top-left .cbx-top-left-inner {
-  max-width: 270px;
-  float: right;
+  max-width: 500px;
+  float: left;
 }
 .cbx-header .cbx-top-left .cbx-top-left-inner .main-logo {
   padding: 2.2rem;
@@ -1446,7 +1446,7 @@ ALBUM end
 EVENT start
 **************************/
 .cbx-event {
-  background: url('http://placehold.it/1920x1200') center center repeat-x fixed;
+  background: url('/soon/images/gente.jpg') center center repeat-x fixed;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;

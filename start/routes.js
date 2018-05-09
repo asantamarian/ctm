@@ -19,9 +19,10 @@ const {ioc} = require('@adonisjs/fold')
 var util = require('util')
 
 Route.on('/').render('soon')
+Route.on('/web').render('welcome')
 Route.get('/login/google', 'Account/ExternalLogin.redirect')
 Route.get('/google/callback', 'Account/ExternalLogin.callback')
-
+Route.get('/Events','Events/Events.list')
 Route.any('/:module/:controller/:action',  ({view ,request, response,params,auth, session}) => {
   
     const module = params.module
