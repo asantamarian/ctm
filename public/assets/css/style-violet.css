@@ -364,7 +364,7 @@ Header start
   /*TOP MAIN STRACTURE*/
 }
 .cbx-header .cbx-top-left-col {
-  background: #8E24AA;
+  background: #000000;
   height: 110px;
   -webkit-transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
@@ -677,7 +677,7 @@ Header start
 .cbx-header #cbx-header-menu-black .navbar {
   border-top: 1px solid #131313;
   border-bottom: 0px solid #131313;
-  background: #252525;
+  background: #83808070 70;
 }
 .cbx-header #cbx-header-menu-black .cbx-navbar .cbx-nav li {
   border-left: 1px solid #131313;
