@@ -40,4 +40,4 @@ Route.any('/:module/:controller/:action',  ({view ,request, response,params,auth
    
     return controllerInstance.method.apply(controllerInstance.instance,[{view,request,response,params,auth, session}])
     
-}).middleware(['autenticacion:session'])
+})//.middleware(['autenticacion:session'])
