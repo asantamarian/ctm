@@ -13,7 +13,7 @@
 
 
 //set dir path as you need
-var templatedir = "./public/";
+var templatedir = "./public/themes/web/";
 //var templatedir = "D:/xampp/htdocs/htmlthemes/musicz/";
 //var node_mod_dir = 'F:/xampp/htdocs/node_modules/'; //for internal development, or set path as you need
 //var node_mod_dir = 'F:/xampp/htdocs/node_modules/'; //for internal development, or set path as you need

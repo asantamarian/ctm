@@ -1446,7 +1446,7 @@ ALBUM end
 EVENT start
 **************************/
 .cbx-event {
-  background: url('/soon/images/gente.jpg') center center repeat-x fixed;
+  background: url('/themes/web/soon/images/gente.jpg') center center repeat-x fixed;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;

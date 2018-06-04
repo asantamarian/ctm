@@ -19,11 +19,11 @@ const {ioc} = require('@adonisjs/fold')
 var util = require('util')
 
 Route.on('/').render('soon')
-Route.on('/web').render('welcome')
+Route.any('/web','Core/Web.index')
 Route.get('/login/google', 'Account/ExternalLogin.redirect')
 Route.get('/google/callback', 'Account/ExternalLogin.callback')
 Route.get('/Events','Events/Events.list')
-Route.any('/:module/:controller/:action',  ({view ,request, response,params,auth, session}) => {
+Route.any('/:module/:controller/:action',  ({view ,request, response,params,auth, session,antl}) => {
   
     const module = params.module
     
@@ -38,6 +38,6 @@ Route.any('/:module/:controller/:action',  ({view ,request, response,params,auth
     
     const controllerInstance = ioc.makeFunc(url)
    
-    return controllerInstance.method.apply(controllerInstance.instance,[{view,request,response,params,auth, session}])
+    return controllerInstance.method.apply(controllerInstance.instance,[{view,request,response,params,auth, session,antl}])
     
 })//.middleware(['autenticacion:session'])

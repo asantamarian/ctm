@@ -1,0 +1,41 @@
+<!--HEADER-->
+    <section>
+        <div id="cbx-slider" class="cbx-slider">
+            <div class="cbx-header-menu">
+                <div class="container">
+                    <div class="row">
+
+                    </div> <!--//.main row-->
+                </div> <!--//.container-->
+
+                <div id="cbx-main-slider" class="owl-carousel owl-theme">
+
+                    @each(item in items)
+                    <div class="cbx-item-common cbx-item-center">
+                        <div class="col-sm-12g">
+                            <div class="slider-text-single">
+                                <figure>
+                                    <img src="{{item.image}}" alt="Music-Banner"/>
+                                    <figcaption>
+                                        <div class="cbx-container">
+                                            <div class="cbx-hover-link">
+                                                <div class="cbx-vertical">
+                                                    <h2 class="slider-title cbx-fadeInRight-one">{{item.title}}</h2>
+                                                    <p class="slider-sub-title cbx-fadeInRight-two">{{item.description}}</p>
+                                                    <a class="cbx-btn cbx-btn-md cbx-fadeInRight-three" href="{{item.buttonLink}}?id={{item.id}}">{{item.buttonText}}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div> <!--//.col-->
+                    </div>
+                   @endeach
+                   
+
+                </div> <!--//.cbx-main-slider-->
+
+            </div> <!--//.cbx-inner-->
+        </div> <!--//.cbx-header-->
+    </section> <!--//.HEADER-->
