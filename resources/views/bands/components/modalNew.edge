@@ -1,0 +1,35 @@
+<div class="modal fade" id="modalNew" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" id="formulario">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="largeModalLabel">Nueva Banda</h4>
+                        </div>
+                        <div class="modal-body">
+                        <form >
+                                <label for="email_address">Nombre</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" id="nombre" v-model="banda.nombre" class="form-control" placeholder="Aquí va el nombre de la banda">
+                                    </div>
+                                </div>
+                                <label for="password">Descripción</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <textarea rows="4" cols="50"  id="txtDescripcion" v-model="banda.descripcion" class="form-control" placeholder="Descripción de la banda"></textarea>
+                                    </div>
+                                </div>
+                                <label for="estilos">Estilos</label>
+                                <div class="form-group demo-tagsinput-area">
+                                    <div class="form-line">
+                                        <input type="text" id="txtEstilos"  class="form-control" data-role="tagsinput" value="">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-link waves-effect" v-on:click="addBanda">Guardar</button>
+                            <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>

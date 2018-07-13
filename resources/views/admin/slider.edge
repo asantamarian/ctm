@@ -1,0 +1,71 @@
+@layout('layouts/admin')
+@section("styles")
+    <link href="/themes/admin/plugins/nestable/jquery-nestable.css" rel="stylesheet" />
+@endsection
+@section("scripts")
+<script src="/themes/admin/plugins/nestable/jquery.nestable.js"></script>
+<script>
+
+$(function () {
+    $('.dd').nestable();
+
+    $('.dd').on('change', function () {
+        var $this = $(this);
+        var serializedData = window.JSON.stringify($($this).nestable('serialize'));
+
+        $this.parents('div.body').find('textarea').val(serializedData);
+    });
+});
+</script>
+@endsection
+@section('content')
+
+    <div class="block-header">
+        <h2>Slider</h2>
+    </div>
+
+    <!-- Widgets -->
+    
+    <div class="row clearfix">
+                <!-- Default Example -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                DEFAULT EXAMPLE
+                                <small>Drag & drop hierarchical list with mouse and touch compatibility</small>
+                            </h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another action</a></li>
+                                        <li><a href="javascript:void(0);">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div class="clearfix m-b-20">
+                                <div class="dd">
+                                    <ol class="dd-list">
+                                    @each(item in slider)
+                                        <li class="dd-item" data-id="{{item.id}}">
+                                            <div class="dd-handle">
+                                                {{item.title}}
+                                            </div>
+                                        </li>
+                                    @endeach
+                                        
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+@endsection

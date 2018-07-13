@@ -20,6 +20,7 @@ var util = require('util')
 
 Route.on('/').render('soon')
 Route.any('/web','Core/Web.index')
+Route.any('/admin','Core/Admin.index')
 Route.get('/login/google', 'Account/ExternalLogin.redirect')
 Route.get('/google/callback', 'Account/ExternalLogin.callback')
 Route.get('/Events','Events/Events.list')

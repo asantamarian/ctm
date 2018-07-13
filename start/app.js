@@ -32,7 +32,7 @@ const providers = [
 |
 */
 const aceProviders = [
-  '@adonisjs/lucid/providers/MigrationsProvider'
+  '@adonisjs/lucid/providers/MigrationsProvider',
 ]
 
 /*
@@ -57,6 +57,6 @@ const aliases = {}
 | Here you store ace commands for your package
 |
 */
-const commands = []
+const commands = ['App/Commands/Scaffold']
 
 module.exports = { providers, aceProviders, aliases, commands }
