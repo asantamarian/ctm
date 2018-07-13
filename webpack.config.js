@@ -2,7 +2,6 @@
 const path = require('path');
 
 module.exports = {
-    mode:"development",
   entry: {
       bands:['./client/js/source/band.js']
       
@@ -10,7 +9,12 @@ module.exports = {
   output: {
     filename: '[name].min.js',
     path: path.join(__dirname, 'public/assets/js/bin/')
+  },
+  mode:"production",
+  watch:true,
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
   }
 
 };
-///\.min\.js$/

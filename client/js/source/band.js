@@ -1,4 +1,4 @@
-//
+//s
 var cBandas = new Vue({
     el: '#comBandas',
     data: {
@@ -57,4 +57,4 @@ addBanda:function () {
      $("#modalNew").modal("hide");
 }
 }
-})
+});
