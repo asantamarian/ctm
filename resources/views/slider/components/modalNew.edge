@@ -1,0 +1,65 @@
+<div class="modal fade" id="modalNew" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content" id="formulario">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="largeModalLabel">Nuevo Item</h4>
+                        </div>
+                        <div class="modal-body">
+                        <form  enctype="multipart/form-data">
+                                <label for="email_address">Titulo</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" id="nombre" v-model="item.titulo" class="form-control" placeholder="Aquí va el nombre ">
+                                    </div>
+                                </div>
+                                <label for="password">Descripción</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <textarea rows="4" cols="50"  id="txtDescripcion" v-model="item.descripcion" class="form-control" placeholder="Descripción "></textarea>
+                                    </div>
+                                </div>
+                                <label for="email_address">Texto Botón</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" id="nombre" v-model="item.textoBoton" class="form-control" placeholder="Aquí va el texto ">
+                                    </div>
+                                </div>
+                                <label for="email_address">Link Botón</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" id="nombre" v-model="item.linkBoton" class="form-control" placeholder="Aquí va el link ">
+                                    </div>
+                                </div>
+
+                                <div id="fileUpload"  class="form-group">
+                                    <div class="dz-message">
+                                        <div class="drag-icon-cph">
+                                            <i class="material-icons">touch_app</i>
+                                        </div>
+                                        <h3>Drop files here or click to upload.</h3>
+                                    </div>
+                                    <div class="fallback">
+                                        <input name="file" type="file" multiple />
+                                    </div>
+                                </div>
+                                <label for="email_address">Publicación Automática</label>
+                                <div class="form-group">
+                                     <div class="switch">
+                                        <label>No<input type="checkbox" v-model="item.publica" ><span class="lever"></span>Si</label>
+                                    </div>
+                                </div>
+                                <label for="email_address">Fecha Publicación</label>
+                                 <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" class="datetimepicker form-control" v-model="item.fechaPublicacion" id="fecha" name="fecha" placeholder="Please choose date & time...">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-link waves-effect" v-on:click="addItem">Guardar</button>
+                            <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>

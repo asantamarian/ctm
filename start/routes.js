@@ -20,10 +20,18 @@ var util = require('util')
 
 Route.on('/').render('soon')
 Route.any('/web','Core/Web.index')
-Route.any('/admin','Core/Admin.index')
+Route.any('/admin','Core/Admin.index').middleware(['autenticacion:session'])
 Route.get('/login/google', 'Account/ExternalLogin.redirect')
 Route.get('/google/callback', 'Account/ExternalLogin.callback')
 Route.get('/Events','Events/Events.list')
+Route.get('users/:id', 'Account/UserController.profile').middleware('autenticacion')
+Route.get('/Account/Register/doRegister','/Account/Register.doRegister')
+Route.get('/login', 'Account/UserController.loginView')
+
+Route.post('/login', 'Account/UserController.login')
+
+Route.get('/logout', 'Account/UserController.logout')
+
 Route.any('/:module/:controller/:action',  ({view ,request, response,params,auth, session,antl}) => {
   
     const module = params.module
@@ -41,4 +49,4 @@ Route.any('/:module/:controller/:action',  ({view ,request, response,params,auth
    
     return controllerInstance.method.apply(controllerInstance.instance,[{view,request,response,params,auth, session,antl}])
     
-})//.middleware(['autenticacion:session'])
+}).middleware(['autenticacion:session'])

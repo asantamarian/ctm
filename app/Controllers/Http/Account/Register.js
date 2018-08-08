@@ -19,7 +19,7 @@ class Register{
             success: 'Registration Successful! Now go ahead and login'
         }
 
-        return view.render('account/login',  {persona:persona,instrumento:instrumento});
+        return view.render('account/login',  {});
     }
     
     async doRegisterPersonas({view,request, response}) {

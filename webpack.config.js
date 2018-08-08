@@ -3,7 +3,8 @@ const path = require('path');
 
 module.exports = {
   entry: {
-      bands:['./client/js/source/band.js']
+      bands:['./client/js/source/band.js'],
+      slider:['./client/js/source/slider.js']
       
     },
   output: {

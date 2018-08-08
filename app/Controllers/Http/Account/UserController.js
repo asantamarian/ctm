@@ -1,5 +1,5 @@
 'use strict'
-const got = use('got')
+
 const data = use('App/Utils/Data')
 class UserController {
     
@@ -15,9 +15,6 @@ class UserController {
         
           try{
            
-
-            
-
           }catch(err){
             console.log(err)
           }
@@ -27,7 +24,7 @@ class UserController {
         
 
 
-        return response.redirect('/')
+        return response.redirect('/admin')
       }
       
       async logout ({ view,request, auth ,response,session}) {

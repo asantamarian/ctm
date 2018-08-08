@@ -1,0 +1,69 @@
+<div class="row" >
+    
+    <div class="card" v-for="item in items">
+        <div class="header">
+            <div class="form-group form-group-lg">
+                <div class="form-line">
+                    <input type="text" class="form-control" placeholder="Título" v-on:blur="update(item)"  v-model="item.title">
+                </div>
+            </div>
+            <ul class="header-dropdown m-r--5">
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">more_vert</i>
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a href="#" class=" waves-effect waves-block" v-on:click="deleteItem(item)">Eliminar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img :src="item.image" height="300" width="500"/>
+                </div>
+                <div class="col-lg-6">
+                    <div class="caption">
+                        <div class="form-group">
+                            <div class="form-line">
+                                <textarea rows="4" class="form-control no-resize" placeholder="Descripción" v-on:blur="update(item)"  v-model="item.description"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="number" class="form-control no-resize" placeholder="Orden" v-on:blur="update(item)" v-model="item.sliderOrder"></textarea>
+                            </div>
+                        </div>
+                        <label for="email_address">Texto Botón</label>
+                        <div class="form-group form-group-lg">
+                            <div class="form-line">
+                                <input type="text" class="form-control" placeholder="Título" v-on:blur="update(item)"  v-model="item.buttonText">
+                            </div>
+                        </div>
+                        <label for="email_address">Link</label>
+                        <div class="form-group form-group-lg">
+                            <div class="form-line">
+                                <input type="text" class="form-control" placeholder="Título" v-on:blur="update(item)"  v-model="item.buttonLink">
+                            </div>
+                        </div>
+                        <label for="email_address">Publicado</label>
+                            <div class="form-group">
+                            <div class="switch">
+                                <label>No<input type="checkbox" v-model="item.public" v-on:change="update(item)"><span class="lever"></span>Si</label>
+                            </div>
+                        </div>
+                        
+                        <label for="email_address">Fecha Publicación</label>
+                            <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" class="datetimepicker form-control" v-on:blur="update(item)"  v-model="item.publishDate" id="fechaPublicacion" name="fechaPublicacion" placeholder="" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

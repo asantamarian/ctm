@@ -1,19 +1,21 @@
 'use strict'
 const data = use('App/Utils/Data')
+var fs = require('fs');
+const uuidv4 = require('uuid/v4');
 class Admin {
     async index({view,request, response}) {
         
         return view.render('admin/index',  {});
     }
-    async slider({view,request, response}) {
-        const querySlider = `call slider_getAllPublic()`;        
-        const rSlider   = await data.execQuery(querySlider);
-        var slider = rSlider[0][0];
-
-        console.log(slider)
-
-        
-        return view.render('admin/slider',  {slider});
+    async uploadFile({view,request, response}) {
+        var file = request.file("file");
+        var name = uuidv4().replace(/-/g,"");
+        var fileExt = file.clientName.split('.').pop();
+        name = `${name}.${fileExt}`;
+        await file.move("public/images/", {
+            name: name
+        });
+        return {fileName:name};
     }
 }
 module.exports = Admin 

@@ -1,4 +1,4 @@
-//s
+//sssddss
 var cBandas = new Vue({
     el: '#comBandas',
     data: {
