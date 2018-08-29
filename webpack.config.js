@@ -4,7 +4,8 @@ const path = require('path');
 module.exports = {
   entry: {
       bands:['./client/js/source/band.js'],
-      slider:['./client/js/source/slider.js']
+      slider:['./client/js/source/slider.js'],
+      blog:['./client/js/source/blog.js']
       
     },
   output: {
